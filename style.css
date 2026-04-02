@@ -1419,6 +1419,27 @@ p  { line-height: 1.75; }
 .js-ready .reveal-delay-3 { transition-delay: .3s; }
 .js-ready .reveal-delay-4 { transition-delay: .4s; }
 
+/* ============================================================
+   Responsive Grid Helpers
+   (replaces inline grid styles so media queries can override)
+   ============================================================ */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.grid-2-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 64px;
+}
+.stat-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .js-ready .reveal { opacity: 1; transform: none; transition: none; }
   .btn { transition: none; }
@@ -1477,6 +1498,21 @@ p  { line-height: 1.75; }
   .newsletter-strip__inner { flex-direction: column; }
   .newsletter-form  { flex-direction: column; }
   .newsletter-form input { min-width: auto; width: 100%; }
+
+  /* Responsive grid helpers */
+  .grid-3     { grid-template-columns: 1fr; }
+  .grid-2-col { grid-template-columns: 1fr; gap: 36px; }
+  .stat-cards-grid { grid-template-columns: repeat(2, 1fr); }
+
+  /* Page hero tighter on mobile */
+  .page-hero { padding: 48px 0; }
+
+  /* Filter bar smaller pills */
+  .filter-btn { padding: 6px 12px; font-size: .73rem; }
+  .filter-bar { gap: 8px; }
+
+  /* Section header less bottom margin */
+  .section-header { margin-bottom: 36px; }
 }
 
 /* ============================================================
@@ -1492,4 +1528,6 @@ p  { line-height: 1.75; }
   .hero__cta        { flex-direction: column; }
   .cta-banner__btns { flex-direction: column; align-items: center; }
   .form-card        { padding: 24px; }
+  .stat-cards-grid  { grid-template-columns: 1fr; }
+  .hero__proof      { flex-direction: column; gap: 10px; }
 }
