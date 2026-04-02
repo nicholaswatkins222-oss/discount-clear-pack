@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DCP Brand Kit — Internal Visual Reference</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+  body { background: #f0f4f8; padding: 40px 0; }
+  .bk-page { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+  .bk-header { text-align: center; margin-bottom: 64px; }
+  .bk-header h1 { font-family: 'Barlow Condensed', sans-serif; font-size: 3rem; font-weight: 800; color: #0D1E3D; letter-spacing: -.02em; margin-bottom: 8px; }
+  .bk-header p  { color: #64748B; font-size: .9rem; }
+  .bk-section { background: #fff; border-radius: 16px; padding: 40px; margin-bottom: 32px; box-shadow: 0 2px 16px rgba(13,30,61,.08); }
+  .bk-section-title { font-family: 'Barlow Condensed', sans-serif; font-size: 1.1rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #94A3B8; margin-bottom: 28px; padding-bottom: 12px; border-bottom: 1px solid #E2E8F0; }
+  /* Color swatches */
+  .swatch-row { display: flex; flex-wrap: wrap; gap: 16px; }
+  .swatch { border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(13,30,61,.10); flex: 0 0 140px; }
+  .swatch__color { height: 80px; }
+  .swatch__label { padding: 10px 12px; background: #fff; border-top: 1px solid #E2E8F0; }
+  .swatch__name  { font-size: .72rem; font-weight: 600; color: #334155; display: block; margin-bottom: 2px; }
+  .swatch__hex   { font-size: .68rem; color: #94A3B8; font-family: monospace; }
+  /* Typography demo */
+  .type-demo h1,.type-demo h2,.type-demo h3,.type-demo h4 { margin-bottom: 12px; }
+  .type-demo .label { font-size: .7rem; color: #94A3B8; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 4px; }
+  /* Button row */
+  .btn-row { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; margin-bottom: 20px; }
+  /* Shadow cards */
+  .shadow-row { display: flex; flex-wrap: wrap; gap: 20px; }
+  .shadow-demo { flex: 0 0 140px; height: 100px; background: #fff; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: .75rem; color: #64748B; font-weight: 500; }
+  /* Card demos */
+  .card-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  /* Hero/grain demo */
+  .hero-demo { border-radius: 16px; overflow: hidden; min-height: 200px; background: #080F1F; display: flex; align-items: center; padding: 40px; position: relative; }
+  .hero-demo::after { content: ''; position: absolute; inset: 0; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); opacity: .04; pointer-events: none; }
+  .hero-demo__content { position: relative; z-index: 1; }
+  /* Logo on backgrounds */
+  .logo-row { display: flex; gap: 20px; flex-wrap: wrap; }
+  .logo-bg { border-radius: 12px; padding: 28px 32px; flex: 0 0 200px; display: flex; align-items: center; justify-content: center; }
+  .logo-bg.on-white  { background: #fff;    border: 1px solid #E2E8F0; }
+  .logo-bg.on-navy   { background: #0D1E3D; }
+  .logo-bg.on-dark   { background: #080F1F; }
+  .logo-bg.on-off    { background: #F5F8FB; border: 1px solid #E2E8F0; }
+  .logo-bg img { height: 50px; width: auto; }
+  .logo-inverted { filter: brightness(0) invert(1); }
+</style>
+</head>
+<body>
+<div class="bk-page">
+
+  <!-- Header -->
+  <div class="bk-header">
+    <h1>Discount Clear Pack — Brand Kit</h1>
+    <p>Internal visual reference &nbsp;·&nbsp; v1.0 &nbsp;·&nbsp; April 2026</p>
+  </div>
+
+  <!-- Colors: Navy Family -->
+  <div class="bk-section">
+    <div class="bk-section-title">01 — Colors: Primary (Navy)</div>
+    <div class="swatch-row">
+      <div class="swatch"><div class="swatch__color" style="background:#0D1E3D;"></div><div class="swatch__label"><span class="swatch__name">--navy</span><span class="swatch__hex">#0D1E3D</span></div></div>
+      <div class="swatch"><div class="swatch__color" style="background:#142856;"></div><div class="swatch__label"><span class="swatch__name">--navy-mid</span><span class="swatch__hex">#142856</span></div></div>
+      <div class="swatch"><div class="swatch__color" style="background:#080F1F;"></div><div class="swatch__label"><span class="swatch__name">--navy-dark</span><span class="swatch__hex">#080F1F</span></div></div>
+      <div class="swatch"><div class="swatch__color" style="background:rgba(13,30,61,0.07);border:1px solid #E2E8F0;"></div><div class="swatch__label"><span class="swatch__name">--navy-muted</span><span class="swatch__hex">rgba(13,30,61,.07)</span></div></div>
+    </div>
+  </div>
+
+  <!-- Colors: Ice Family -->
+  <div class="bk-section">
+    <div class="bk-section-title">02 — Colors: Secondary (Ice / Glass Blue)</div>
+    <div class="swatch-row">
+      <div class="swatch"><div class="swatch__color" style="background:#D4E8F7;"></div><div class="swatch__label"><span class="swatch__name">--ice</span><span class="swatch__hex">#D4E8F7</span></div></div>
+      <div class="swatch"><div class="swatch__color" style="background:#A8CDE8;"></div><div class="swatch__label"><span class="swatch__name">--ice-mid</span><span class="swatch__hex">#A8CDE8</span></div></div>
+      <div class="swatch"><div class="swatch__color" style="background:#5B9EC9;"></div><div class="swatch__label"><span class="swatch__name">--ice-deep</span><span class="swatch__hex">#5B9EC9</span></div></div>
+      <div class="swatch"><div class="swatch__color" style="background:rgba(91,158,201,0.20);border:1px solid #E2E8F0;"></div><div class="swatch__label"><span class="swatch__name">--ice-glow</span><span class="swatch__hex">rgba(91,158,201,.20)</span></div></div>
+    </div>
+  </div>
+
+  <!-- Colors: Gold -->
+  <div class="bk-section">
+    <div class="bk-section-title">03 — Colors: Accent (Gold — CTAs)</div>
+    <div class="swatch-row">
+      <div class="swatch"><div class="swatch__color" style="background:#E8922A;"></div><div class="swatch__label"><span class="swatch__name">--gold</span><span class="swatch__hex">#E8922A</span></div></div>
+      <div class="swatch"><div class="swatch__color" style="background:#C97818;"></div><div class="swatch__label"><span class="swatch__name">--gold-dark</span><span class="swatch__hex">#C97818</span></div></div>
+      <div class="swatch"><div class="swatch__color" style="background:#F0A84A;"></div><div class="swatch__label"><span class="swatch__name">--gold-lt</span><span class="swatch__hex">#F0A84A</span></div></div>
+      <div class="swatch"><div class="swatch__color" style="background:rgba(232,146,42,0.22);border:1px solid #E2E8F0;"></div><div class="swatch__label"><span class="swatch__name">--gold-glow</span><span class="swatch__hex">rgba(232,146,42,.22)</span></div></div>
+    </div>
+  </div>
+
+  <!-- Colors: Neutrals -->
+  <div class="bk-section">
+    <div class="bk-section-title">04 — Colors: Neutrals (Slate-tinted)</div>
+    <div class="swatch-row">
+      <div class="swatch"><div class="swatch__color" style="background:#FFFFFF;border:1px solid #E2E8F0;"></div><div class="swatch__label"><span class="swatch__name">--white</span><span class="swatch__hex">#FFFFFF</span></div></div>
+      <div class="swatch"><div class="swatch__color" style="background:#F5F8FB;"></div><div class="swatch__label"><span class="swatch__name">--off-white</span><span class="swatch__hex">#F5F8FB</span></div></div>
+      <div class="swatch"><div class="swatch__color" style="background:#E2E8F0;"></div><div class="swatch__label"><span class="swatch__name">--gray-100</span><span class="swatch__hex">#E2E8F0</span></div></div>
+      <div class="swatch"><div class="swatch__color" style="background:#94A3B8;"></div><div class="swatch__label"><span class="swatch__name">--gray-300</span><span class="swatch__hex">#94A3B8</span></div></div>
+      <div class="swatch"><div class="swatch__color" style="background:#64748B;"></div><div class="swatch__label"><span class="swatch__name">--gray-500</span><span class="swatch__hex">#64748B</span></div></div>
+      <div class="swatch"><div class="swatch__color" style="background:#334155;"></div><div class="swatch__label"><span class="swatch__name">--gray-700</span><span class="swatch__hex">#334155</span></div></div>
+      <div class="swatch"><div class="swatch__color" style="background:#0F172A;"></div><div class="swatch__label"><span class="swatch__name">--gray-900</span><span class="swatch__hex">#0F172A</span></div></div>
+    </div>
+  </div>
+
+  <!-- Typography -->
+  <div class="bk-section">
+    <div class="bk-section-title">05 — Typography</div>
+    <div class="type-demo">
+      <div class="label">h1 — Barlow Condensed 800 — 4.4rem</div>
+      <h1 style="margin-bottom:24px;">Build Your Brand with Custom Packaging</h1>
+      <div class="label">h2 — Barlow Condensed 700 — 3rem</div>
+      <h2 style="margin-bottom:24px;">The Packaging Partner Built for Volume</h2>
+      <div class="label">h3 — Barlow Condensed 700 — 1.6rem</div>
+      <h3 style="margin-bottom:24px;">Custom Branding Available on All SKUs</h3>
+      <div class="label">h4 — Barlow Condensed 600 — 1.1rem</div>
+      <h4 style="margin-bottom:24px;">Wholesale Pricing · Direct Shipping · B2B Support</h4>
+      <hr style="border:none;border-top:1px solid #E2E8F0;margin:24px 0;">
+      <div class="label">Body — Inter 400 — 1rem · line-height 1.75</div>
+      <p style="max-width:640px;">Discount Clear Pack provides clear, food-grade containers for sushi restaurants, bakeries, delis, dispensaries, and distributors across the country. Custom printing, wholesale pricing, and samples available. Direct shipping to your facility.</p>
+      <br>
+      <div class="label">Section Label — Inter 600 — 0.7rem · tracking .14em · uppercase</div>
+      <span class="section-label">Our Product Catalog</span>
+    </div>
+  </div>
+
+  <!-- Buttons -->
+  <div class="bk-section">
+    <div class="bk-section-title">06 — Buttons</div>
+    <div class="btn-row">
+      <a href="#" class="btn btn-primary"><i class="fas fa-arrow-right"></i> Request a Quote</a>
+      <a href="#" class="btn btn-secondary"><i class="fas fa-box"></i> Browse Products</a>
+      <a href="#" class="btn btn-outline">Learn More</a>
+      <a href="#" class="btn btn-outline-ice"><i class="fas fa-flask"></i> Get a Sample</a>
+    </div>
+    <div style="background:#0D1E3D; padding:24px; border-radius:12px; margin-top:8px;">
+      <div class="btn-row">
+        <a href="#" class="btn btn-primary">Request a Quote</a>
+        <a href="#" class="btn btn-ghost">Browse Products</a>
+      </div>
+    </div>
+    <div class="btn-row" style="margin-top:16px;">
+      <a href="#" class="btn btn-primary btn-sm">Small</a>
+      <a href="#" class="btn btn-primary">Default</a>
+      <a href="#" class="btn btn-primary btn-lg">Large</a>
+    </div>
+  </div>
+
+  <!-- Shadows -->
+  <div class="bk-section">
+    <div class="bk-section-title">07 — Shadows (Navy-tinted, Layered)</div>
+    <div class="shadow-row">
+      <div class="shadow-demo" style="box-shadow:0 1px 2px rgba(13,30,61,.08);">--shd-xs</div>
+      <div class="shadow-demo" style="box-shadow:0 2px 6px rgba(13,30,61,.10),0 1px 2px rgba(13,30,61,.06);">--shd-sm</div>
+      <div class="shadow-demo" style="box-shadow:0 4px 16px rgba(13,30,61,.12),0 2px 6px rgba(13,30,61,.07);">--shd-md</div>
+      <div class="shadow-demo" style="box-shadow:0 10px 32px rgba(13,30,61,.16),0 4px 12px rgba(13,30,61,.09);">--shd-lg</div>
+      <div class="shadow-demo" style="box-shadow:0 20px 48px rgba(13,30,61,.18),0 8px 20px rgba(13,30,61,.11);">--shd-xl</div>
+      <div class="shadow-demo" style="box-shadow:0 4px 20px rgba(232,146,42,.28),0 2px 8px rgba(232,146,42,.16);">--shd-gold</div>
+      <div class="shadow-demo" style="box-shadow:0 4px 20px rgba(91,158,201,.22),0 2px 8px rgba(91,158,201,.14);">--shd-ice</div>
+    </div>
+  </div>
+
+  <!-- Cards -->
+  <div class="bk-section">
+    <div class="bk-section-title">08 — Cards</div>
+    <div class="card-row">
+      <!-- Feature Card -->
+      <div class="card">
+        <div class="card__icon"><i class="fas fa-tags"></i></div>
+        <div class="card__title">Custom Branding</div>
+        <div class="card__desc">Your logo and colors printed on every container. Custom artwork, short lead times.</div>
+        <a href="#" class="card__link">Learn More <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Feature Card Gold Icon -->
+      <div class="card">
+        <div class="card__icon gold"><i class="fas fa-industry"></i></div>
+        <div class="card__title">Wholesale Pricing</div>
+        <div class="card__desc">Factory-direct costs on full pallet and case quantities. Volume discounts available.</div>
+        <a href="#" class="card__link">Get a Quote <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Stat card (navy) -->
+      <div style="background:#0D1E3D;border-radius:16px;padding:36px 24px;text-align:center;">
+        <div class="stat-card__number"><em>10+</em></div>
+        <div class="stat-card__label">Years in Business</div>
+      </div>
+    </div>
+    <br>
+    <!-- Product Card -->
+    <div style="max-width:280px;">
+      <div class="product-card">
+        <div class="product-card__img" style="min-height:140px;">
+          <span class="product-card__badge">Sushi</span>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="Sushi Container">
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__cat">Sushi Containers</div>
+          <div class="product-card__name">Sushi Tray with Dome Lid</div>
+          <div class="product-card__desc">Clear RPET, anti-fog, secure dome lid. Perfect for rolls and nigiri.</div>
+          <div class="product-card__tag"><i class="fas fa-check-circle"></i> Custom Branding Available</div>
+          <div class="product-card__action"><a href="#" class="btn btn-outline btn-sm">Inquire</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Border Radius -->
+  <div class="bk-section">
+    <div class="bk-section-title">09 — Border Radius</div>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;">
+      <div style="width:80px;height:80px;background:#E2E8F0;border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:.7rem;color:#64748B;">4px</div>
+      <div style="width:80px;height:80px;background:#E2E8F0;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:.7rem;color:#64748B;">8px</div>
+      <div style="width:80px;height:80px;background:#E2E8F0;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:.7rem;color:#64748B;">12px</div>
+      <div style="width:80px;height:80px;background:#E2E8F0;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:.7rem;color:#64748B;">16px</div>
+      <div style="width:80px;height:80px;background:#E2E8F0;border-radius:24px;display:flex;align-items:center;justify-content:center;font-size:.7rem;color:#64748B;">24px</div>
+      <div style="width:80px;height:80px;background:#E2E8F0;border-radius:9999px;display:flex;align-items:center;justify-content:center;font-size:.7rem;color:#64748B;">full</div>
+    </div>
+  </div>
+
+  <!-- Grain / Hero Texture -->
+  <div class="bk-section">
+    <div class="bk-section-title">10 — Hero Treatment (Gradient + Grain)</div>
+    <div class="hero-demo" style="background:linear-gradient(135deg,#080F1F 0%,#142856 55%,rgba(91,158,201,.10) 100%);">
+      <div class="hero-demo__content">
+        <div style="font-family:'Barlow Condensed',sans-serif;font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#5B9EC9;margin-bottom:16px;display:flex;align-items:center;gap:10px;"><span style="display:block;width:28px;height:2px;background:#5B9EC9;border-radius:999px;flex-shrink:0;"></span>CUSTOM PACKAGING SUPPLIER · SPARKS, NV</div>
+        <h1 style="color:#fff;font-size:2.8rem;margin-bottom:12px;">Build Your Brand with <em style="color:#E8922A;font-style:normal;">Custom Packaging</em></h1>
+        <p style="color:rgba(255,255,255,.60);max-width:480px;line-height:1.78;">DCP is a decade-strong B2B packaging supplier serving food service operators, distributors, and private label brands across the country.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Logo Treatments -->
+  <div class="bk-section">
+    <div class="bk-section-title">11 — Logo on Backgrounds</div>
+    <div class="logo-row">
+      <div class="logo-bg on-white"><img src="Logo/Screenshot 2026-04-01 170924.png" alt="DCP Logo"></div>
+      <div class="logo-bg on-off"><img src="Logo/Screenshot 2026-04-01 170924.png" alt="DCP Logo"></div>
+      <div class="logo-bg on-navy"><img src="Logo/Screenshot 2026-04-01 170924.png" alt="DCP Logo" class="logo-inverted"></div>
+      <div class="logo-bg on-dark"><img src="Logo/Screenshot 2026-04-01 170924.png" alt="DCP Logo" class="logo-inverted"></div>
+    </div>
+  </div>
+
+  <!-- Icons -->
+  <div class="bk-section">
+    <div class="bk-section-title">12 — Icon Vocabulary (Font Awesome 6)</div>
+    <div style="display:flex;flex-wrap:wrap;gap:24px;color:#5B9EC9;">
+      <div style="text-align:center;font-size:.72rem;color:#64748B;"><i class="fas fa-box" style="font-size:1.6rem;color:#5B9EC9;display:block;margin-bottom:6px;"></i>fa-box</div>
+      <div style="text-align:center;font-size:.72rem;color:#64748B;"><i class="fas fa-tags" style="font-size:1.6rem;color:#5B9EC9;display:block;margin-bottom:6px;"></i>fa-tags</div>
+      <div style="text-align:center;font-size:.72rem;color:#64748B;"><i class="fas fa-industry" style="font-size:1.6rem;color:#5B9EC9;display:block;margin-bottom:6px;"></i>fa-industry</div>
+      <div style="text-align:center;font-size:.72rem;color:#64748B;"><i class="fas fa-truck" style="font-size:1.6rem;color:#5B9EC9;display:block;margin-bottom:6px;"></i>fa-truck</div>
+      <div style="text-align:center;font-size:.72rem;color:#64748B;"><i class="fas fa-leaf" style="font-size:1.6rem;color:#5B9EC9;display:block;margin-bottom:6px;"></i>fa-leaf</div>
+      <div style="text-align:center;font-size:.72rem;color:#64748B;"><i class="fas fa-utensils" style="font-size:1.6rem;color:#5B9EC9;display:block;margin-bottom:6px;"></i>fa-utensils</div>
+      <div style="text-align:center;font-size:.72rem;color:#64748B;"><i class="fas fa-store" style="font-size:1.6rem;color:#5B9EC9;display:block;margin-bottom:6px;"></i>fa-store</div>
+      <div style="text-align:center;font-size:.72rem;color:#64748B;"><i class="fas fa-handshake" style="font-size:1.6rem;color:#5B9EC9;display:block;margin-bottom:6px;"></i>fa-handshake</div>
+      <div style="text-align:center;font-size:.72rem;color:#64748B;"><i class="fas fa-flask" style="font-size:1.6rem;color:#5B9EC9;display:block;margin-bottom:6px;"></i>fa-flask</div>
+      <div style="text-align:center;font-size:.72rem;color:#64748B;"><i class="fas fa-boxes-stacked" style="font-size:1.6rem;color:#5B9EC9;display:block;margin-bottom:6px;"></i>fa-boxes-stacked</div>
+      <div style="text-align:center;font-size:.72rem;color:#64748B;"><i class="fas fa-map-marker-alt" style="font-size:1.6rem;color:#5B9EC9;display:block;margin-bottom:6px;"></i>fa-map-marker-alt</div>
+      <div style="text-align:center;font-size:.72rem;color:#64748B;"><i class="fas fa-phone" style="font-size:1.6rem;color:#5B9EC9;display:block;margin-bottom:6px;"></i>fa-phone</div>
+      <div style="text-align:center;font-size:.72rem;color:#64748B;"><i class="fas fa-check-circle" style="font-size:1.6rem;color:#E8922A;display:block;margin-bottom:6px;"></i>fa-check-circle</div>
+      <div style="text-align:center;font-size:.72rem;color:#64748B;"><i class="fas fa-recycle" style="font-size:1.6rem;color:#3d8c5e;display:block;margin-bottom:6px;"></i>fa-recycle</div>
+      <div style="text-align:center;font-size:.72rem;color:#64748B;"><i class="fas fa-seedling" style="font-size:1.6rem;color:#3d8c5e;display:block;margin-bottom:6px;"></i>fa-seedling</div>
+    </div>
+  </div>
+
+  <!-- Section Divider Demo -->
+  <div class="bk-section">
+    <div class="bk-section-title">13 — Section Header Pattern</div>
+    <span class="section-label">Our Product Catalog</span>
+    <div class="section-divider"></div>
+    <h2 style="margin-bottom:12px;">Everything Your Operation Needs</h2>
+    <p style="color:#64748B;max-width:560px;">From sushi trays to bakery boxes — clear, food-grade, custom-brandable containers from one trusted supplier.</p>
+  </div>
+
+  <div style="text-align:center;color:#94A3B8;font-size:.78rem;padding:32px 0;">
+    Discount Clear Pack · Brand Kit v1.0 · Internal Use Only
+  </div>
+</div>
+</body>
+</html>

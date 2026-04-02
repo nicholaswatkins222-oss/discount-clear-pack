@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products — Discount Clear Pack</title>
+<meta name="description" content="Browse DCP's full catalog: sushi containers, herb containers, round and rectangle clamshells, deli tubs, bakery containers, and trays. Custom branding available on all SKUs.">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- Inline SVG placeholder helper -->
+<script>
+  // Generate category-colored placeholders without network calls
+  const PLACEHOLDERS = {
+    sushi:   'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="300"%3E%3Crect width="100%25" height="100%25" fill="%23D4E8F7"/%3E%3Ctext x="50%25" y="50%25" font-family="Arial" font-size="14" fill="%235B9EC9" text-anchor="middle" dominant-baseline="middle"%3ESushi Container%3C/text%3E%3C/svg%3E',
+    herb:    'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="300"%3E%3Crect width="100%25" height="100%25" fill="%23D4E8F7"/%3E%3Ctext x="50%25" y="50%25" font-family="Arial" font-size="14" fill="%235B9EC9" text-anchor="middle" dominant-baseline="middle"%3EHerb Container%3C/text%3E%3C/svg%3E',
+    default: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="300"%3E%3Crect width="100%25" height="100%25" fill="%23D4E8F7"/%3E%3C/svg%3E',
+  };
+</script>
+</head>
+<body>
+
+<!-- Top Info Bar -->
+<div class="top-bar">
+  <div class="container">
+    <div class="top-bar__inner">
+      <div class="top-bar__item"><i class="fas fa-map-marker-alt"></i><span>519 Vista Blvd, Sparks NV 89434</span></div>
+      <div class="top-bar__item"><i class="fas fa-phone"></i><a href="tel:7757374090">(775) 737-4090</a></div>
+      <div class="top-bar__item"><i class="fas fa-box"></i><span>B2B Custom Packaging · Sparks, NV</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo" aria-label="Discount Clear Pack Home">
+        <img src="Logo/Screenshot 2026-04-01 170924.png" alt="Discount Clear Pack">
+      </a>
+      <div class="navbar__nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="navbar__actions">
+        <a href="tel:7757374090" class="navbar__phone"><i class="fas fa-phone"></i>(775) 737-4090</a>
+        <a href="contact.html" class="btn btn-primary btn-sm">Request a Quote</a>
+      </div>
+      <button class="navbar__hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" role="dialog" aria-label="Mobile navigation">
+  <button class="mobile-menu__close" aria-label="Close menu"><i class="fas fa-times"></i></button>
+  <div class="mobile-menu__inner">
+    <nav>
+      <a href="index.html">Home</a><a href="services.html">Services</a><a href="products.html">Products</a>
+      <a href="blog.html">Blog</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+    </nav>
+    <div class="mobile-menu__footer">
+      <div class="mobile-menu__phone-big"><i class="fas fa-phone"></i><a href="tel:7757374090" style="color:inherit;">(775) 737-4090</a></div>
+      <p>519 Vista Blvd, Sparks NV 89434</p>
+    </div>
+  </div>
+</div>
+
+<!-- Page Hero -->
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero__inner">
+      <div class="page-hero__breadcrumb">
+        <a href="index.html">Home</a><i class="fas fa-chevron-right"></i><span>Products</span>
+      </div>
+      <h1 class="page-hero__title">Our Product Catalog</h1>
+      <p class="page-hero__subtitle">Clear, food-grade containers in 7 categories. Custom branding available on all SKUs. Wholesale pricing on case and pallet orders.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Custom Branding Mid-Banner -->
+<div style="background:var(--gold);padding:14px 0;">
+  <div class="container">
+    <div style="display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;text-align:center;">
+      <span style="font-family:var(--font-h);font-size:.88rem;font-weight:700;color:var(--white);letter-spacing:.04em;text-transform:uppercase;"><i class="fas fa-tags" style="margin-right:8px;"></i>All containers available with custom printing — your logo, your brand, on every SKU.</span>
+      <a href="contact.html" class="btn btn-ghost btn-sm" style="border-color:rgba(255,255,255,.7);">Request a Quote</a>
+    </div>
+  </div>
+</div>
+
+<!-- Catalog Section -->
+<section class="section">
+  <div class="container">
+
+    <!-- Filter Bar -->
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All Products</button>
+      <button class="filter-btn" data-filter="sushi">Sushi</button>
+      <button class="filter-btn" data-filter="herb">Herb</button>
+      <button class="filter-btn" data-filter="round-clamshell">Round Clamshells</button>
+      <button class="filter-btn" data-filter="rect-clamshell">Rect. Clamshells</button>
+      <button class="filter-btn" data-filter="deli">Deli Tubs &amp; Lids</button>
+      <button class="filter-btn" data-filter="bakery">Bakery</button>
+      <button class="filter-btn" data-filter="trays">Trays</button>
+    </div>
+
+    <!-- Products Grid -->
+    <div class="products-grid" id="products-grid">
+
+      <!-- Sushi (4 SKUs) -->
+      <div class="product-card" data-category="sushi" id="sushi">
+        <div class="product-card__img">
+          <span class="product-card__badge">Sushi</span>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="Sushi Tray with Dome Lid">
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__cat">Sushi Containers</div>
+          <div class="product-card__name">Sushi Tray with Dome Lid</div>
+          <div class="product-card__desc">Clear RPET tray + anti-fog dome lid. Standard sizing for rolls and nigiri. High-clarity display.</div>
+          <div class="product-card__tag"><i class="fas fa-check-circle"></i> Custom Branding Available</div>
+          <div class="product-card__action"><a href="contact.html" class="btn btn-outline btn-sm">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="sushi">
+        <div class="product-card__img">
+          <span class="product-card__badge">Sushi</span>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="Flat Sushi Container">
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__cat">Sushi Containers</div>
+          <div class="product-card__name">Flat Sushi Container</div>
+          <div class="product-card__desc">Low-profile flat container for takeout sushi trays. Snap-secure flat lid, clear visibility.</div>
+          <div class="product-card__tag"><i class="fas fa-check-circle"></i> Custom Branding Available</div>
+          <div class="product-card__action"><a href="contact.html" class="btn btn-outline btn-sm">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="sushi">
+        <div class="product-card__img">
+          <span class="product-card__badge">Sushi</span>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="2-Tier Sushi Box">
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__cat">Sushi Containers</div>
+          <div class="product-card__name">2-Tier Sushi Box</div>
+          <div class="product-card__desc">Stacked two-tier format for combo rolls + nigiri. Premium display presentation.</div>
+          <div class="product-card__tag"><i class="fas fa-check-circle"></i> Custom Branding Available</div>
+          <div class="product-card__action"><a href="contact.html" class="btn btn-outline btn-sm">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="sushi">
+        <div class="product-card__img">
+          <span class="product-card__badge">Sushi</span>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="Sushi Platter with Insert">
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__cat">Sushi Containers</div>
+          <div class="product-card__name">Sushi Platter with Insert</div>
+          <div class="product-card__desc">Large-format platter with divider insert. Ideal for party trays and family-size sushi orders.</div>
+          <div class="product-card__tag"><i class="fas fa-check-circle"></i> Custom Branding Available</div>
+          <div class="product-card__action"><a href="contact.html" class="btn btn-outline btn-sm">Inquire</a></div>
+        </div>
+      </div>
+
+      <!-- Herb (3 SKUs) -->
+      <div class="product-card" data-category="herb" id="herb">
+        <div class="product-card__img">
+          <span class="product-card__badge">Herb</span>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="Round Herb Container 4oz">
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__cat">Herb Containers</div>
+          <div class="product-card__name">Round Herb Container (4oz)</div>
+          <div class="product-card__desc">4oz round clear container. Smooth surface for label or custom print. Secure press-fit lid.</div>
+          <div class="product-card__tag"><i class="fas fa-check-circle"></i> Custom Branding Available</div>
+          <div class="product-card__action"><a href="contact.html" class="btn btn-outline btn-sm">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="herb">
+        <div class="product-card__img">
+          <span class="product-card__badge">Herb</span>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="Round Herb Container 8oz">
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__cat">Herb Containers</div>
+          <div class="product-card__name">Round Herb Container (8oz)</div>
+          <div class="product-card__desc">8oz round format. Larger print surface, same clear visibility. Compatible with standard lid sizing.</div>
+          <div class="product-card__tag"><i class="fas fa-check-circle"></i> Custom Branding Available</div>
+          <div class="product-card__action"><a href="contact.html" class="btn btn-outline btn-sm">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="herb">
+        <div class="product-card__img">
+          <span class="product-card__badge">Herb</span>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="Square Herb Container">
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__cat">Herb Containers</div>
+          <div class="product-card__name">Square Herb Container</div>
+          <div class="product-card__desc">Square format with flat-panel sides — maximizes printable label surface for custom branding.</div>
+          <div class="product-card__tag"><i class="fas fa-check-circle"></i> Custom Branding Available</div>
+          <div class="product-card__action"><a href="contact.html" class="btn btn-outline btn-sm">Inquire</a></div>
+        </div>
+      </div>
+
+      <!-- Round Clamshells (3 SKUs) -->
+      <div class="product-card" data-category="round-clamshell" id="round-clamshells">
+        <div class="product-card__img">
+          <span class="product-card__badge">Clamshell</span>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="5-inch Round Clamshell">
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__cat">Round Clamshells</div>
+          <div class="product-card__name">5" Round Clamshell</div>
+          <div class="product-card__desc">Compact 5" round for single-serve applications. Clear RPET, secure hinge, optional vent.</div>
+          <div class="product-card__tag"><i class="fas fa-check-circle"></i> Custom Branding Available</div>
+          <div class="product-card__action"><a href="contact.html" class="btn btn-outline btn-sm">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="round-clamshell">
+        <div class="product-card__img">
+          <span class="product-card__badge">Clamshell</span>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="7-inch Round Clamshell">
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__cat">Round Clamshells</div>
+          <div class="product-card__name">7" Round Clamshell</div>
+          <div class="product-card__desc">Mid-size 7" round — ideal for salads, fruit, and prepared food portions. Anti-fog option available.</div>
+          <div class="product-card__tag"><i class="fas fa-check-circle"></i> Custom Branding Available</div>
+          <div class="product-card__action"><a href="contact.html" class="btn btn-outline btn-sm">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="round-clamshell">
+        <div class="product-card__img">
+          <span class="product-card__badge">Clamshell</span>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="9-inch Round Clamshell">
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__cat">Round Clamshells</div>
+          <div class="product-card__name">9" Round Clamshell</div>
+          <div class="product-card__desc">Large 9" format for bulk salads, deli portions, and display-ready presentations.</div>
+          <div class="product-card__tag"><i class="fas fa-check-circle"></i> Custom Branding Available</div>
+          <div class="product-card__action"><a href="contact.html" class="btn btn-outline btn-sm">Inquire</a></div>
+        </div>
+      </div>
+
+      <!-- Rectangle Clamshells (4 SKUs) -->
+      <div class="product-card" data-category="rect-clamshell" id="clamshells">
+        <div class="product-card__img">
+          <span class="product-card__badge">Clamshell</span>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="Small Rectangle Clamshell">
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__cat">Rectangle Clamshells</div>
+          <div class="product-card__name">Small Rectangle Clamshell</div>
+          <div class="product-card__desc">Compact rect. format. Better shelf-packing efficiency than round. Ideal for single-serve portions.</div>
+          <div class="product-card__tag"><i class="fas fa-check-circle"></i> Custom Branding Available</div>
+          <div class="product-card__action"><a href="contact.html" class="btn btn-outline btn-sm">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="rect-clamshell">
+        <div class="product-card__img">
+          <span class="product-card__badge">Clamshell</span>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="Medium Rectangle Clamshell">
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__cat">Rectangle Clamshells</div>
+          <div class="product-card__name">Medium Rectangle Clamshell</div>
+          <div class="product-card__desc">Standard medium rect. — most versatile SKU in the clamshell category. Wide application range.</div>
+          <div class="product-card__tag"><i class="fas fa-check-circle"></i> Custom Branding Available</div>
+          <div class="product-card__action"><a href="contact.html" class="btn btn-outline btn-sm">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="rect-clamshell">
+        <div class="product-card__img">
+          <span class="product-card__badge">Clamshell</span>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="Large Rectangle Clamshell">
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__cat">Rectangle Clamshells</div>
+          <div class="product-card__name">Large Rectangle Clamshell</div>
+          <div class="product-card__desc">Family-size rect. format for deli displays, prepared meals, and bulk produce packaging.</div>
+          <div class="product-card__tag"><i class="fas fa-check-circle"></i> Custom Branding Available</div>
+          <div class="product-card__action"><a href="contact.html" class="btn btn-outline btn-sm">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="rect-clamshell">
+        <div class="product-card__img">
+          <span class="product-card__badge">Clamshell</span>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="XL Rectangle Clamshell">
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__cat">Rectangle Clamshells</div>
+          <div class="product-card__name">XL Rectangle Clamshell</div>
+          <div class="product-card__desc">Extra-large format for party trays, caterer portions, and bulk display applications.</div>
+          <div class="product-card__tag"><i class="fas fa-check-circle"></i> Custom Branding Available</div>
+          <div class="product-card__action"><a href="contact.html" class="btn btn-outline btn-sm">Inquire</a></div>
+        </div>
+      </div>
+
+      <!-- Deli Tubs (3 SKUs) -->
+      <div class="product-card" data-category="deli" id="deli">
+        <div class="product-card__img">
+          <span class="product-card__badge">Deli</span>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="8oz Deli Tub and Lid">
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__cat">Deli Tubs &amp; Lids</div>
+          <div class="product-card__name">8oz Deli Tub + Lid</div>
+          <div class="product-card__desc">Single-serve 8oz deli tub with snap-fit lid. For soups, dips, salsas, and prepared condiments.</div>
+          <div class="product-card__tag"><i class="fas fa-check-circle"></i> Custom Branding Available</div>
+          <div class="product-card__action"><a href="contact.html" class="btn btn-outline btn-sm">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="deli">
+        <div class="product-card__img">
+          <span class="product-card__badge">Deli</span>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="16oz Deli Tub and Lid">
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__cat">Deli Tubs &amp; Lids</div>
+          <div class="product-card__name">16oz Deli Tub + Lid</div>
+          <div class="product-card__desc">Standard pint-size deli tub. Workhorse SKU for deli counters. Secure lid, broad print area.</div>
+          <div class="product-card__tag"><i class="fas fa-check-circle"></i> Custom Branding Available</div>
+          <div class="product-card__action"><a href="contact.html" class="btn btn-outline btn-sm">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="deli">
+        <div class="product-card__img">
+          <span class="product-card__badge">Deli</span>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="32oz Deli Tub and Lid">
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__cat">Deli Tubs &amp; Lids</div>
+          <div class="product-card__name">32oz Deli Tub + Lid</div>
+          <div class="product-card__desc">Quart-size tub for bulk deli items, takeout soups, and family-size prepared foods.</div>
+          <div class="product-card__tag"><i class="fas fa-check-circle"></i> Custom Branding Available</div>
+          <div class="product-card__action"><a href="contact.html" class="btn btn-outline btn-sm">Inquire</a></div>
+        </div>
+      </div>
+
+      <!-- Bakery (3 SKUs) -->
+      <div class="product-card" data-category="bakery" id="bakery">
+        <div class="product-card__img">
+          <span class="product-card__badge">Bakery</span>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="Quarter-Sheet Bakery Container">
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__cat">Bakery Containers</div>
+          <div class="product-card__name">Quarter-Sheet Bakery Container</div>
+          <div class="product-card__desc">High-clarity quarter-sheet format for cookies, brownies, and pastry assortments.</div>
+          <div class="product-card__tag"><i class="fas fa-check-circle"></i> Custom Branding Available</div>
+          <div class="product-card__action"><a href="contact.html" class="btn btn-outline btn-sm">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="bakery">
+        <div class="product-card__img">
+          <span class="product-card__badge">Bakery</span>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="Half-Sheet Bakery Container">
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__cat">Bakery Containers</div>
+          <div class="product-card__name">Half-Sheet Bakery Container</div>
+          <div class="product-card__desc">Full half-sheet format for cakes, cookie trays, and catering presentations.</div>
+          <div class="product-card__tag"><i class="fas fa-check-circle"></i> Custom Branding Available</div>
+          <div class="product-card__action"><a href="contact.html" class="btn btn-outline btn-sm">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="bakery">
+        <div class="product-card__img">
+          <span class="product-card__badge">Bakery</span>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="Cupcake Clamshell 4-Count">
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__cat">Bakery Containers</div>
+          <div class="product-card__name">Cupcake Clamshell (4-Count)</div>
+          <div class="product-card__desc">4-cavity cupcake clamshell with tall dome lid. Display-perfect, no squashed frosting.</div>
+          <div class="product-card__tag"><i class="fas fa-check-circle"></i> Custom Branding Available</div>
+          <div class="product-card__action"><a href="contact.html" class="btn btn-outline btn-sm">Inquire</a></div>
+        </div>
+      </div>
+
+      <!-- Trays (3 SKUs) -->
+      <div class="product-card" data-category="trays" id="trays">
+        <div class="product-card__img">
+          <span class="product-card__badge">Trays</span>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="Produce Tray">
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__cat">Trays</div>
+          <div class="product-card__name">Produce Tray</div>
+          <div class="product-card__desc">Open-top clear tray for produce displays, grab-and-go sections, and fresh-cut packaging.</div>
+          <div class="product-card__tag"><i class="fas fa-check-circle"></i> Custom Branding Available</div>
+          <div class="product-card__action"><a href="contact.html" class="btn btn-outline btn-sm">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="trays">
+        <div class="product-card__img">
+          <span class="product-card__badge">Trays</span>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="Flat Display Tray">
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__cat">Trays</div>
+          <div class="product-card__name">Flat Display Tray</div>
+          <div class="product-card__desc">Shallow flat tray for retail display and grab-and-go merchandising. Stackable design.</div>
+          <div class="product-card__tag"><i class="fas fa-check-circle"></i> Custom Branding Available</div>
+          <div class="product-card__action"><a href="contact.html" class="btn btn-outline btn-sm">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="trays">
+        <div class="product-card__img">
+          <span class="product-card__badge">Trays</span>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="Deep Compartment Tray">
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__cat">Trays</div>
+          <div class="product-card__name">Deep Compartment Tray</div>
+          <div class="product-card__desc">Multi-compartment deep tray for meal kits, sampler portions, and sectioned food displays.</div>
+          <div class="product-card__tag"><i class="fas fa-check-circle"></i> Custom Branding Available</div>
+          <div class="product-card__action"><a href="contact.html" class="btn btn-outline btn-sm">Inquire</a></div>
+        </div>
+      </div>
+
+    </div><!-- /products-grid -->
+  </div>
+</section>
+
+<!-- Bulk Ordering CTA -->
+<section class="cta-banner">
+  <div class="container">
+    <div class="cta-banner__inner">
+      <h2 class="cta-banner__title">Ready to Order?</h2>
+      <p class="cta-banner__subtitle">Request a quote, samples, or product info. We respond within one business day.</p>
+      <div class="cta-banner__btns">
+        <a href="contact.html" class="btn btn-primary btn-lg"><i class="fas fa-paper-plane"></i> Request a Quote</a>
+        <a href="services.html" class="btn btn-ghost btn-lg">Learn About Our Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer" role="contentinfo">
+  <div style="height:3px;background:linear-gradient(90deg,#E8922A 0%,#F0A84A 50%,#E8922A 100%);"></div>
+  <div class="container">
+    <div class="footer__grid" style="padding-top:56px;">
+      <div>
+        <div class="footer__logo"><img src="Logo/Screenshot 2026-04-01 170924.png" alt="Discount Clear Pack"></div>
+        <p class="footer__tagline">Build Your Brand with Custom Packaging. B2B clear container supplier serving food service operators, distributors, and private label brands.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Navigation</div>
+        <div class="footer__col-links">
+          <a href="index.html">Home</a><a href="services.html">Services</a><a href="products.html">Products</a>
+          <a href="blog.html">Blog</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Products</div>
+        <div class="footer__col-links">
+          <a href="#sushi">Sushi Containers</a><a href="#herb">Herb Containers</a>
+          <a href="#round-clamshells">Round Clamshells</a><a href="#clamshells">Rect. Clamshells</a>
+          <a href="#deli">Deli Tubs &amp; Lids</a><a href="#bakery">Bakery</a><a href="#trays">Trays</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Contact</div>
+        <div class="footer__contact-item"><i class="fas fa-map-marker-alt"></i><span>519 Vista Blvd, Sparks NV 89434</span></div>
+        <div class="footer__contact-item"><i class="fas fa-phone"></i><a href="tel:7757374090">(775) 737-4090</a></div>
+        <div class="footer__contact-item"><i class="fas fa-envelope"></i><a href="mailto:info@discountclearpack.com">info@discountclearpack.com</a></div>
+        <div class="footer__contact-item"><i class="fas fa-clock"></i><span>Mon–Fri · 8am–5pm PT</span></div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2026 Discount Clear Pack. All rights reserved.</span>
+      <span>B2B Custom Packaging · Sparks, NV</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
