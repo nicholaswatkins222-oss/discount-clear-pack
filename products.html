@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -7,15 +7,6 @@
 <meta name="description" content="Browse DCP's full catalog: sushi containers, herb containers, round and rectangle clamshells, deli tubs, bakery containers, and trays. Custom branding available on all SKUs.">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<!-- Inline SVG placeholder helper -->
-<script>
-  // Generate category-colored placeholders without network calls
-  const PLACEHOLDERS = {
-    sushi:   'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="300"%3E%3Crect width="100%25" height="100%25" fill="%23D4E8F7"/%3E%3Ctext x="50%25" y="50%25" font-family="Arial" font-size="14" fill="%235B9EC9" text-anchor="middle" dominant-baseline="middle"%3ESushi Container%3C/text%3E%3C/svg%3E',
-    herb:    'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="300"%3E%3Crect width="100%25" height="100%25" fill="%23D4E8F7"/%3E%3Ctext x="50%25" y="50%25" font-family="Arial" font-size="14" fill="%235B9EC9" text-anchor="middle" dominant-baseline="middle"%3EHerb Container%3C/text%3E%3C/svg%3E',
-    default: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="300"%3E%3Crect width="100%25" height="100%25" fill="%23D4E8F7"/%3E%3C/svg%3E',
-  };
-</script>
 </head>
 <body>
 
@@ -25,7 +16,7 @@
     <div class="top-bar__inner">
       <div class="top-bar__item"><i class="fas fa-map-marker-alt"></i><span>519 Vista Blvd, Sparks NV 89434</span></div>
       <div class="top-bar__item"><i class="fas fa-phone"></i><a href="tel:7757374090">(775) 737-4090</a></div>
-      <div class="top-bar__item"><i class="fas fa-box"></i><span>B2B Custom Packaging · Sparks, NV</span></div>
+      <div class="top-bar__item"><i class="fas fa-envelope"></i><a href="mailto:info@discountclearpack.com">info@discountclearpack.com</a></div>
     </div>
   </div>
 </div>
@@ -39,15 +30,16 @@
       </a>
       <div class="navbar__nav">
         <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
+        <a href="logistics.html">Logistics</a>
         <a href="products.html" class="active">Products</a>
-        <a href="blog.html">Blog</a>
+        <a href="custom-packaging.html">Custom Packaging</a>
+        <a href="sustainability.html">Sustainability</a>
+        <a href="blog.html">News</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </div>
       <div class="navbar__actions">
         <a href="tel:7757374090" class="navbar__phone"><i class="fas fa-phone"></i>(775) 737-4090</a>
-        <a href="contact.html" class="btn btn-primary btn-sm">Request a Quote</a>
       </div>
       <button class="navbar__hamburger" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -61,12 +53,19 @@
   <button class="mobile-menu__close" aria-label="Close menu"><i class="fas fa-times"></i></button>
   <div class="mobile-menu__inner">
     <nav>
-      <a href="index.html">Home</a><a href="services.html">Services</a><a href="products.html">Products</a>
-      <a href="blog.html">Blog</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="logistics.html">Logistics</a>
+      <a href="products.html">Products</a>
+      <a href="custom-packaging.html">Custom Packaging</a>
+      <a href="sustainability.html">Sustainability</a>
+      <a href="blog.html">News</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </nav>
     <div class="mobile-menu__footer">
       <div class="mobile-menu__phone-big"><i class="fas fa-phone"></i><a href="tel:7757374090" style="color:inherit;">(775) 737-4090</a></div>
       <p>519 Vista Blvd, Sparks NV 89434</p>
+      <p>Mon–Fri · 8am–5pm PT</p>
     </div>
   </div>
 </div>
@@ -78,18 +77,19 @@
       <div class="page-hero__breadcrumb">
         <a href="index.html">Home</a><i class="fas fa-chevron-right"></i><span>Products</span>
       </div>
-      <h1 class="page-hero__title">Our Product Catalog</h1>
-      <p class="page-hero__subtitle">Clear, food-grade containers in 7 categories. Custom branding available on all SKUs. Wholesale pricing on case and pallet orders.</p>
+      <span class="section-label">PRODUCT CATALOG</span>
+      <h1 class="page-hero__title">Clear food-grade containers.</h1>
+      <p class="page-hero__subtitle">Seven categories of clear, food-grade packaging — all custom-brandable, all backed by our risk-free supply chain model. Factory-direct pricing on case and pallet orders.</p>
     </div>
   </div>
 </section>
 
-<!-- Custom Branding Mid-Banner -->
-<div style="background:var(--gold);padding:14px 0;">
+<!-- Custom Branding Strip — Ink, not gold -->
+<div style="background:var(--ink);padding:18px 0;">
   <div class="container">
-    <div style="display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;text-align:center;">
-      <span style="font-family:var(--font-h);font-size:.88rem;font-weight:700;color:var(--white);letter-spacing:.04em;text-transform:uppercase;"><i class="fas fa-tags" style="margin-right:8px;"></i>All containers available with custom printing — your logo, your brand, on every SKU.</span>
-      <a href="contact.html" class="btn btn-ghost btn-sm" style="border-color:rgba(255,255,255,.7);">Request a Quote</a>
+    <div style="display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center;">
+      <span style="font-family:var(--font-h);font-size:.88rem;font-weight:700;color:var(--paper);letter-spacing:.14em;text-transform:uppercase;"><i class="fas fa-tag" style="margin-right:10px;color:#C9A66B;"></i>Every SKU available with custom printing — your logo, your colors, your brand.</span>
+      <a href="custom-packaging.html" class="text-link on-dark">Custom Packaging <i class="fas fa-arrow-right"></i></a>
     </div>
   </div>
 </div>
@@ -117,7 +117,6 @@
       <div class="product-card" data-category="sushi" id="sushi">
         <div class="product-card__img">
           <span class="product-card__badge">Sushi</span>
-          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="Sushi Tray with Dome Lid">
         </div>
         <div class="product-card__body">
           <div class="product-card__cat">Sushi Containers</div>
@@ -131,7 +130,6 @@
       <div class="product-card" data-category="sushi">
         <div class="product-card__img">
           <span class="product-card__badge">Sushi</span>
-          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="Flat Sushi Container">
         </div>
         <div class="product-card__body">
           <div class="product-card__cat">Sushi Containers</div>
@@ -145,7 +143,6 @@
       <div class="product-card" data-category="sushi">
         <div class="product-card__img">
           <span class="product-card__badge">Sushi</span>
-          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="2-Tier Sushi Box">
         </div>
         <div class="product-card__body">
           <div class="product-card__cat">Sushi Containers</div>
@@ -159,7 +156,6 @@
       <div class="product-card" data-category="sushi">
         <div class="product-card__img">
           <span class="product-card__badge">Sushi</span>
-          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="Sushi Platter with Insert">
         </div>
         <div class="product-card__body">
           <div class="product-card__cat">Sushi Containers</div>
@@ -174,7 +170,6 @@
       <div class="product-card" data-category="herb" id="herb">
         <div class="product-card__img">
           <span class="product-card__badge">Herb</span>
-          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="Round Herb Container 4oz">
         </div>
         <div class="product-card__body">
           <div class="product-card__cat">Herb Containers</div>
@@ -188,7 +183,6 @@
       <div class="product-card" data-category="herb">
         <div class="product-card__img">
           <span class="product-card__badge">Herb</span>
-          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="Round Herb Container 8oz">
         </div>
         <div class="product-card__body">
           <div class="product-card__cat">Herb Containers</div>
@@ -202,7 +196,6 @@
       <div class="product-card" data-category="herb">
         <div class="product-card__img">
           <span class="product-card__badge">Herb</span>
-          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="Square Herb Container">
         </div>
         <div class="product-card__body">
           <div class="product-card__cat">Herb Containers</div>
@@ -217,7 +210,6 @@
       <div class="product-card" data-category="round-clamshell" id="round-clamshells">
         <div class="product-card__img">
           <span class="product-card__badge">Clamshell</span>
-          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="5-inch Round Clamshell">
         </div>
         <div class="product-card__body">
           <div class="product-card__cat">Round Clamshells</div>
@@ -231,7 +223,6 @@
       <div class="product-card" data-category="round-clamshell">
         <div class="product-card__img">
           <span class="product-card__badge">Clamshell</span>
-          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="7-inch Round Clamshell">
         </div>
         <div class="product-card__body">
           <div class="product-card__cat">Round Clamshells</div>
@@ -245,7 +236,6 @@
       <div class="product-card" data-category="round-clamshell">
         <div class="product-card__img">
           <span class="product-card__badge">Clamshell</span>
-          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="9-inch Round Clamshell">
         </div>
         <div class="product-card__body">
           <div class="product-card__cat">Round Clamshells</div>
@@ -260,7 +250,6 @@
       <div class="product-card" data-category="rect-clamshell" id="clamshells">
         <div class="product-card__img">
           <span class="product-card__badge">Clamshell</span>
-          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="Small Rectangle Clamshell">
         </div>
         <div class="product-card__body">
           <div class="product-card__cat">Rectangle Clamshells</div>
@@ -274,7 +263,6 @@
       <div class="product-card" data-category="rect-clamshell">
         <div class="product-card__img">
           <span class="product-card__badge">Clamshell</span>
-          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="Medium Rectangle Clamshell">
         </div>
         <div class="product-card__body">
           <div class="product-card__cat">Rectangle Clamshells</div>
@@ -288,7 +276,6 @@
       <div class="product-card" data-category="rect-clamshell">
         <div class="product-card__img">
           <span class="product-card__badge">Clamshell</span>
-          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="Large Rectangle Clamshell">
         </div>
         <div class="product-card__body">
           <div class="product-card__cat">Rectangle Clamshells</div>
@@ -302,7 +289,6 @@
       <div class="product-card" data-category="rect-clamshell">
         <div class="product-card__img">
           <span class="product-card__badge">Clamshell</span>
-          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="XL Rectangle Clamshell">
         </div>
         <div class="product-card__body">
           <div class="product-card__cat">Rectangle Clamshells</div>
@@ -317,7 +303,6 @@
       <div class="product-card" data-category="deli" id="deli">
         <div class="product-card__img">
           <span class="product-card__badge">Deli</span>
-          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="8oz Deli Tub and Lid">
         </div>
         <div class="product-card__body">
           <div class="product-card__cat">Deli Tubs &amp; Lids</div>
@@ -331,7 +316,6 @@
       <div class="product-card" data-category="deli">
         <div class="product-card__img">
           <span class="product-card__badge">Deli</span>
-          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="16oz Deli Tub and Lid">
         </div>
         <div class="product-card__body">
           <div class="product-card__cat">Deli Tubs &amp; Lids</div>
@@ -345,7 +329,6 @@
       <div class="product-card" data-category="deli">
         <div class="product-card__img">
           <span class="product-card__badge">Deli</span>
-          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="32oz Deli Tub and Lid">
         </div>
         <div class="product-card__body">
           <div class="product-card__cat">Deli Tubs &amp; Lids</div>
@@ -360,7 +343,6 @@
       <div class="product-card" data-category="bakery" id="bakery">
         <div class="product-card__img">
           <span class="product-card__badge">Bakery</span>
-          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="Quarter-Sheet Bakery Container">
         </div>
         <div class="product-card__body">
           <div class="product-card__cat">Bakery Containers</div>
@@ -374,7 +356,6 @@
       <div class="product-card" data-category="bakery">
         <div class="product-card__img">
           <span class="product-card__badge">Bakery</span>
-          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="Half-Sheet Bakery Container">
         </div>
         <div class="product-card__body">
           <div class="product-card__cat">Bakery Containers</div>
@@ -388,7 +369,6 @@
       <div class="product-card" data-category="bakery">
         <div class="product-card__img">
           <span class="product-card__badge">Bakery</span>
-          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="Cupcake Clamshell 4-Count">
         </div>
         <div class="product-card__body">
           <div class="product-card__cat">Bakery Containers</div>
@@ -403,7 +383,6 @@
       <div class="product-card" data-category="trays" id="trays">
         <div class="product-card__img">
           <span class="product-card__badge">Trays</span>
-          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="Produce Tray">
         </div>
         <div class="product-card__body">
           <div class="product-card__cat">Trays</div>
@@ -417,7 +396,6 @@
       <div class="product-card" data-category="trays">
         <div class="product-card__img">
           <span class="product-card__badge">Trays</span>
-          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="Flat Display Tray">
         </div>
         <div class="product-card__body">
           <div class="product-card__cat">Trays</div>
@@ -431,7 +409,6 @@
       <div class="product-card" data-category="trays">
         <div class="product-card__img">
           <span class="product-card__badge">Trays</span>
-          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23D4E8F7'/%3E%3C/svg%3E" alt="Deep Compartment Tray">
         </div>
         <div class="product-card__body">
           <div class="product-card__cat">Trays</div>
@@ -446,15 +423,15 @@
   </div>
 </section>
 
-<!-- Bulk Ordering CTA -->
+<!-- CTA Banner -->
 <section class="cta-banner">
   <div class="container">
     <div class="cta-banner__inner">
-      <h2 class="cta-banner__title">Ready to Order?</h2>
-      <p class="cta-banner__subtitle">Request a quote, samples, or product info. We respond within one business day.</p>
+      <h2 class="cta-banner__title">Ready to order?</h2>
+      <p class="cta-banner__subtitle">Request a quote, samples, or product info. Bradford or Kristi will follow up within one business day.</p>
       <div class="cta-banner__btns">
-        <a href="contact.html" class="btn btn-primary btn-lg"><i class="fas fa-paper-plane"></i> Request a Quote</a>
-        <a href="services.html" class="btn btn-ghost btn-lg">Learn About Our Services</a>
+        <a href="contact.html" class="btn btn-primary"><i class="fas fa-arrow-right"></i> Request a Quote</a>
+        <a href="logistics.html" class="btn btn-ghost">Our Supply Chain</a>
       </div>
     </div>
   </div>
@@ -462,36 +439,43 @@
 
 <!-- Footer -->
 <footer class="footer" role="contentinfo">
-  <div style="height:3px;background:linear-gradient(90deg,#E8922A 0%,#F0A84A 50%,#E8922A 100%);"></div>
   <div class="container">
-    <div class="footer__grid" style="padding-top:56px;">
+    <div class="footer__grid">
       <div>
         <div class="footer__logo"><img src="Logo/Screenshot 2026-04-01 170924.png" alt="Discount Clear Pack"></div>
-        <p class="footer__tagline">Build Your Brand with Custom Packaging. B2B clear container supplier serving food service operators, distributors, and private label brands.</p>
+        <p class="footer__tagline">A risk-free supply chain model for packaging at factory direct pricing. Based in Nevada with teams across the United States, China, Vietnam, and throughout Asia.</p>
         <div class="footer__social">
-          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
           <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
           <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
       <div>
-        <div class="footer__col-title">Navigation</div>
+        <div class="footer__col-title">Company</div>
         <div class="footer__col-links">
-          <a href="index.html">Home</a><a href="services.html">Services</a><a href="products.html">Products</a>
-          <a href="blog.html">Blog</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+          <a href="about.html">About DCP</a>
+          <a href="logistics.html">Logistics</a>
+          <a href="custom-packaging.html">Custom Packaging</a>
+          <a href="sustainability.html">Sustainability</a>
+          <a href="blog.html">News</a>
+          <a href="contact.html">Contact</a>
         </div>
       </div>
       <div>
         <div class="footer__col-title">Products</div>
         <div class="footer__col-links">
-          <a href="#sushi">Sushi Containers</a><a href="#herb">Herb Containers</a>
-          <a href="#round-clamshells">Round Clamshells</a><a href="#clamshells">Rect. Clamshells</a>
-          <a href="#deli">Deli Tubs &amp; Lids</a><a href="#bakery">Bakery</a><a href="#trays">Trays</a>
+          <a href="#sushi">Sushi Containers</a>
+          <a href="#herb">Herb Containers</a>
+          <a href="#round-clamshells">Round Clamshells</a>
+          <a href="#clamshells">Rect. Clamshells</a>
+          <a href="#deli">Deli Tubs &amp; Lids</a>
+          <a href="#bakery">Bakery</a>
+          <a href="#trays">Trays</a>
         </div>
       </div>
       <div>
         <div class="footer__col-title">Contact</div>
-        <div class="footer__contact-item"><i class="fas fa-map-marker-alt"></i><span>519 Vista Blvd, Sparks NV 89434</span></div>
+        <div class="footer__contact-item"><i class="fas fa-map-marker-alt"></i><span>519 Vista Blvd<br>Sparks, NV 89434</span></div>
         <div class="footer__contact-item"><i class="fas fa-phone"></i><a href="tel:7757374090">(775) 737-4090</a></div>
         <div class="footer__contact-item"><i class="fas fa-envelope"></i><a href="mailto:info@discountclearpack.com">info@discountclearpack.com</a></div>
         <div class="footer__contact-item"><i class="fas fa-clock"></i><span>Mon–Fri · 8am–5pm PT</span></div>
@@ -499,7 +483,7 @@
     </div>
     <div class="footer__bottom">
       <span>&copy; 2026 Discount Clear Pack. All rights reserved.</span>
-      <span>B2B Custom Packaging · Sparks, NV</span>
+      <span>Sourcing · Logistics · Fulfillment</span>
     </div>
   </div>
 </footer>
