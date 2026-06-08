@@ -163,6 +163,19 @@ p  { line-height: 1.65; }
 .photo-placeholder--tall   { aspect-ratio: 3 / 4; }
 .photo-placeholder--wide   { aspect-ratio: 21 / 9; }
 
+/* Real photos — drop-in replacement for .photo-placeholder slots */
+.photo {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  background: var(--cream-soft);
+}
+.photo--16x9    { aspect-ratio: 16 / 9; }
+.photo--16x10   { aspect-ratio: 16 / 10; }
+.photo--4x3     { aspect-ratio: 4 / 3; }
+.photo--portrait{ aspect-ratio: 3 / 4; }
+
 /* ============================================================
    Buttons — restrained, no big shadows, no gold
    ============================================================ */
