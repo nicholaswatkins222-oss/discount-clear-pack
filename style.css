@@ -944,7 +944,7 @@ p  { line-height: 1.65; }
   top: calc(var(--nav-hs) + 24px);
 }
 .contact-info-card__logo { margin-bottom: 28px; }
-.contact-info-card__logo img { height: 44px; width: auto; filter: brightness(0) invert(1); }
+.contact-info-card__logo img { height: 40px; width: auto; }
 .contact-info__items { display: flex; flex-direction: column; gap: 22px; margin-bottom: 32px; }
 .contact-info__item { display: flex; align-items: flex-start; gap: 14px; }
 .contact-info__item-icon {
@@ -1272,7 +1272,7 @@ p  { line-height: 1.65; }
   border-bottom: 1px solid rgba(255,255,255,.08);
 }
 .footer__logo { margin-bottom: 18px; }
-.footer__logo img { height: 42px; width: auto; filter: brightness(0) invert(1); opacity: .9; }
+.footer__logo img { height: 38px; width: auto; opacity: .95; }
 .footer__tagline { font-size: .88rem; color: rgba(255,252,242,.6); margin-bottom: 22px; line-height: 1.65; max-width: 300px; }
 .footer__social { display: flex; gap: 8px; }
 .footer__social a {
