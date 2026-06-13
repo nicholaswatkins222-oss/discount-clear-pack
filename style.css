@@ -1361,6 +1361,122 @@ p  { line-height: 1.65; }
 }
 
 /* ============================================================
+   Hero — Split (image-forward variant, Kristie homepage)
+   ============================================================ */
+.hero--split { padding: 72px 0 84px; }
+.hero__grid {
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  gap: 56px;
+  align-items: center;
+}
+.hero--split .hero__inner { max-width: none; }
+.hero__media { position: relative; }
+.hero__media-img {
+  width: 100%;
+  aspect-ratio: 4 / 3.4;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shd-md);
+}
+.hero__media-tag {
+  position: absolute;
+  left: 16px; bottom: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0,30,46,.86);
+  color: var(--paper);
+  font-family: var(--font-h);
+  font-size: .76rem;
+  font-weight: 600;
+  letter-spacing: .04em;
+  padding: 8px 14px;
+  border-radius: var(--r-sm);
+  backdrop-filter: blur(4px);
+}
+.hero__media-tag i { color: #C9A66B; font-size: .78rem; }
+
+/* ============================================================
+   Industry / Solution Feature Cards (icon + title + desc)
+   ============================================================ */
+.industry-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(216px, 1fr));
+  gap: 20px;
+}
+.industry-feature {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--bronze);
+  border-radius: var(--r-md);
+  padding: 30px 26px;
+  transition: border-color .22s ease, transform .22s ease;
+}
+.industry-feature:hover { border-color: var(--steel); border-top-color: var(--steel); transform: translateY(-3px); }
+.industry-feature__icon {
+  width: 48px; height: 48px;
+  border: 1px solid var(--line);
+  background: var(--cream-soft);
+  border-radius: var(--r);
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 20px;
+}
+.industry-feature__icon i { font-size: 1.3rem; color: var(--steel); }
+.industry-feature__title { font-size: 1.08rem; font-weight: 700; color: var(--ink); margin-bottom: 10px; letter-spacing: -.015em; line-height: 1.3; }
+.industry-feature__desc { font-size: .9rem; color: var(--muted); line-height: 1.65; }
+
+/* ============================================================
+   Check List — "What Sets Us Apart" / Sustainability
+   ============================================================ */
+.apart-title {
+  font-family: var(--font-h);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -.01em;
+  margin-bottom: 22px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line);
+}
+.check-list { display: flex; flex-direction: column; gap: 14px; }
+.check-list li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-family: var(--font-h);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -.005em;
+}
+.check-list li i {
+  flex-shrink: 0;
+  width: 26px; height: 26px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: .72rem;
+  color: var(--steel);
+  background: var(--steel-soft);
+  border-radius: var(--r-full);
+}
+.check-list--dark li { color: var(--paper); }
+.check-list--dark li i { color: #7FB36F; background: rgba(127,179,111,.16); }
+
+@media (max-width: 900px) {
+  .hero__grid { grid-template-columns: 1fr; gap: 36px; }
+  .hero__media { order: -1; }
+  .hero__media-img { aspect-ratio: 16 / 10; }
+}
+@media (max-width: 768px) {
+  .industry-cards { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .steps-grid[style] { grid-template-columns: 1fr !important; }
+}
+@media (max-width: 480px) {
+  .industry-cards { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
    Responsive — Tablet (≤1024px)
    ============================================================ */
 @media (max-width: 1024px) {
