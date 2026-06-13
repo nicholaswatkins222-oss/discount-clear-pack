@@ -3,43 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>News &amp; Insights — Discount Clear Pack</title>
+<title>Resources — Discount Clear Pack</title>
 <meta name="description" content="Packaging insights for food service operators, private label brands, and wholesale buyers. Resources from the DCP team.">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-<!-- Top Info Bar -->
-<div class="top-bar">
-  <div class="container">
-    <div class="top-bar__inner">
-      <div class="top-bar__item"><i class="fas fa-map-marker-alt"></i><span>519 Vista Blvd, Sparks NV 89434</span></div>
-      <div class="top-bar__item"><i class="fas fa-phone"></i><a href="tel:7757374090">(775) 737-4090</a></div>
-      <div class="top-bar__item"><i class="fas fa-envelope"></i><a href="mailto:info@discountclearpack.com">info@discountclearpack.com</a></div>
-    </div>
-  </div>
-</div>
-
-<!-- Navbar -->
-<nav class="navbar" role="navigation" aria-label="Main navigation">
+<!-- Navbar — dark navy, white logo, gold Request a Quote -->
+<nav class="navbar navbar--dark" role="navigation" aria-label="Main navigation">
   <div class="container">
     <div class="navbar__inner">
       <a href="index.html" class="navbar__logo" aria-label="Discount Clear Pack Home">
-        <img src="Logo/Screenshot 2026-04-01 170924.png" alt="Discount Clear Pack">
+        <img src="Logo/dcp-white.png" alt="Discount Clear Pack">
       </a>
       <div class="navbar__nav">
-        <a href="index.html">Home</a>
-        <a href="logistics.html">Logistics</a>
-        <a href="products.html">Products</a>
+        <a href="products.html">Solutions</a>
+        <a href="products.html#industries">Industries</a>
         <a href="custom-packaging.html">Custom Packaging</a>
         <a href="sustainability.html">Sustainability</a>
-        <a href="blog.html" class="active">News</a>
+        <a href="blog.html" class="active">Resources</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </div>
       <div class="navbar__actions">
-        <a href="tel:7757374090" class="navbar__phone"><i class="fas fa-phone"></i>(775) 737-4090</a>
+        <a href="contact.html" class="btn btn-gold btn-sm navbar__cta"><i class="fas fa-arrow-right"></i> Request a Quote</a>
       </div>
       <button class="navbar__hamburger" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -53,12 +41,11 @@
   <button class="mobile-menu__close" aria-label="Close menu"><i class="fas fa-times"></i></button>
   <div class="mobile-menu__inner">
     <nav>
-      <a href="index.html">Home</a>
-      <a href="logistics.html">Logistics</a>
-      <a href="products.html">Products</a>
+      <a href="products.html">Solutions</a>
+      <a href="products.html#industries">Industries</a>
       <a href="custom-packaging.html">Custom Packaging</a>
       <a href="sustainability.html">Sustainability</a>
-      <a href="blog.html">News</a>
+      <a href="blog.html">Resources</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
@@ -70,83 +57,94 @@
   </div>
 </div>
 
-<!-- Page Hero -->
-<section class="page-hero">
+<!-- Page Hero — dark navy -->
+<section class="page-hero page-hero--dark">
   <div class="container">
     <div class="page-hero__inner">
       <div class="page-hero__breadcrumb">
         <a href="index.html">Home</a>
         <i class="fas fa-chevron-right"></i>
-        <span>News</span>
+        <span>Resources</span>
       </div>
-      <span class="section-label">NEWS &amp; INSIGHTS</span>
-      <h1 class="page-hero__title">From the team.</h1>
-      <p class="page-hero__subtitle">Resources for food service operators, private label brands, and wholesale buyers — written by the people who manage the supply chain every day.</p>
+      <h1 class="page-hero__title">Knowledge to Help Your Business Grow</h1>
+      <p class="page-hero__subtitle">Insights, tips, and industry expertise to help you make smarter packaging decisions.</p>
     </div>
   </div>
 </section>
 
+<!-- Resources — sidebar + grid -->
 <section class="section">
   <div class="container">
-    <div class="blog-grid">
-      <div class="blog-card">
-        <div class="blog-card__img">
-          <span class="blog-card__cat">Sourcing</span>
-        </div>
-        <div class="blog-card__body">
-          <div class="blog-card__title">How to Choose the Right Clamshell Container for Your Food Product</div>
-          <p class="blog-card__excerpt">Not all clamshells are equal. Here's what to consider when selecting container size, venting, and clarity for your specific food product.</p>
-          <div class="blog-card__meta">
-            <span>DCP · Apr 2026</span>
-            <a href="blog-how-to-choose-the-right-clamshell.html" class="blog-card__read">Read <i class="fas fa-arrow-right"></i></a>
+    <div style="display:grid;grid-template-columns:240px 1fr;gap:40px;align-items:start;">
+
+      <!-- LEFT: Browse Topics sidebar -->
+      <aside>
+        <div style="font-family:var(--font-h);font-size:.72rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:18px;">Browse Topics</div>
+        <ul style="display:flex;flex-direction:column;gap:0;list-style:none;padding:0;margin:0;">
+          <li><a href="blog.html" style="display:block;font-family:var(--font-h);font-size:.88rem;font-weight:700;letter-spacing:.04em;color:var(--bronze);padding:10px 14px;border-radius:var(--r-sm);background:var(--bronze-soft);text-decoration:none;">All Topics</a></li>
+          <li><a href="blog.html" style="display:block;font-family:var(--font-h);font-size:.88rem;font-weight:600;letter-spacing:.04em;color:var(--muted);padding:10px 14px;border-radius:var(--r-sm);text-decoration:none;transition:color .18s ease;">Bakery Packaging</a></li>
+          <li><a href="blog.html" style="display:block;font-family:var(--font-h);font-size:.88rem;font-weight:600;letter-spacing:.04em;color:var(--muted);padding:10px 14px;border-radius:var(--r-sm);text-decoration:none;transition:color .18s ease;">Sustainability</a></li>
+          <li><a href="blog.html" style="display:block;font-family:var(--font-h);font-size:.88rem;font-weight:600;letter-spacing:.04em;color:var(--muted);padding:10px 14px;border-radius:var(--r-sm);text-decoration:none;transition:color .18s ease;">Packaging Design</a></li>
+          <li><a href="blog.html" style="display:block;font-family:var(--font-h);font-size:.88rem;font-weight:600;letter-spacing:.04em;color:var(--muted);padding:10px 14px;border-radius:var(--r-sm);text-decoration:none;transition:color .18s ease;">Industry Trends</a></li>
+          <li><a href="blog.html" style="display:block;font-family:var(--font-h);font-size:.88rem;font-weight:600;letter-spacing:.04em;color:var(--muted);padding:10px 14px;border-radius:var(--r-sm);text-decoration:none;transition:color .18s ease;">Cost Savings</a></li>
+        </ul>
+      </aside>
+
+      <!-- RIGHT: Blog grid -->
+      <div>
+        <div class="blog-grid" style="grid-template-columns:repeat(2,1fr);">
+          <div class="blog-card reveal">
+            <div class="blog-card__img"><span class="blog-card__cat">Sourcing</span></div>
+            <div class="blog-card__body">
+              <div class="blog-card__title">How to Choose the Right Clamshell Container for Your Food Product</div>
+              <p class="blog-card__excerpt">Not all clamshells are equal. Here's what to consider when selecting container size, venting, and clarity for your specific food product.</p>
+              <div class="blog-card__meta">
+                <span>DCP · 2026</span>
+                <a href="blog-how-to-choose-the-right-clamshell.html" class="blog-card__read">Read <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card reveal reveal-delay-1">
+            <div class="blog-card__img"><span class="blog-card__cat">Trends</span></div>
+            <div class="blog-card__body">
+              <div class="blog-card__title">Clear Packaging Is Winning the Shelf War: 2026 Food Trend Report</div>
+              <p class="blog-card__excerpt">Consumers increasingly choose products where they can see what they're buying. Here's how clear packaging is driving purchase decisions in 2026.</p>
+              <div class="blog-card__meta">
+                <span>DCP · 2026</span>
+                <a href="blog-clear-packaging-food-trends-2026.html" class="blog-card__read">Read <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card reveal reveal-delay-2">
+            <div class="blog-card__img"><span class="blog-card__cat">Custom Branding</span></div>
+            <div class="blog-card__body">
+              <div class="blog-card__title">The ROI of Custom-Branded Packaging for Small Food Businesses</div>
+              <p class="blog-card__excerpt">Custom-printed containers cost more upfront — but the brand equity and perceived premium quality more than pay for themselves.</p>
+              <div class="blog-card__meta">
+                <span>DCP · 2026</span>
+                <a href="blog-custom-branding-packaging-roi.html" class="blog-card__read">Read <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="blog-card">
-        <div class="blog-card__img">
-          <span class="blog-card__cat">Trends</span>
-        </div>
-        <div class="blog-card__body">
-          <div class="blog-card__title">Clear Packaging Is Winning the Shelf War: 2026 Food Trend Report</div>
-          <p class="blog-card__excerpt">Consumers increasingly choose products where they can see what they're buying. Here's how clear packaging is driving purchase decisions in 2026.</p>
-          <div class="blog-card__meta">
-            <span>DCP · Apr 2026</span>
-            <a href="blog-clear-packaging-food-trends-2026.html" class="blog-card__read">Read <i class="fas fa-arrow-right"></i></a>
-          </div>
+
+        <div style="margin-top:40px;" class="reveal">
+          <a href="blog.html" class="text-link">View All Resources <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
-      <div class="blog-card">
-        <div class="blog-card__img">
-          <span class="blog-card__cat">Custom Branding</span>
-        </div>
-        <div class="blog-card__body">
-          <div class="blog-card__title">The ROI of Custom-Branded Packaging for Small Food Businesses</div>
-          <p class="blog-card__excerpt">Custom-printed containers cost more upfront — but the brand equity and perceived premium quality more than pay for themselves.</p>
-          <div class="blog-card__meta">
-            <span>DCP · Apr 2026</span>
-            <a href="blog-custom-branding-packaging-roi.html" class="blog-card__read">Read <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-      </div>
+
     </div>
   </div>
 </section>
 
-<!-- Newsletter Strip -->
-<div class="newsletter-strip">
-  <div class="container">
-    <div class="newsletter-strip__inner">
-      <div class="newsletter-strip__text">
-        <h3>Get packaging insights in your inbox.</h3>
-        <p>No spam — just useful content for food operators and buyers. Unsubscribe any time.</p>
-      </div>
-      <form class="newsletter-form" onsubmit="event.preventDefault();">
-        <input type="email" placeholder="Your email address" aria-label="Email address">
-        <button type="submit" class="btn btn-primary">Subscribe</button>
-      </form>
-    </div>
-  </div>
-</div>
+<!-- Responsive: collapse sidebar to 1 col under 860px -->
+<style>
+@media (max-width:860px){
+  [style*="grid-template-columns:240px 1fr"]{
+    grid-template-columns:1fr !important;
+  }
+}
+</style>
 
 <!-- Footer -->
 <footer class="footer" role="contentinfo">
@@ -154,7 +152,7 @@
     <div class="footer__grid">
       <div>
         <div class="footer__logo"><img src="Logo/dcp-white.png" alt="Discount Clear Pack"></div>
-        <p class="footer__tagline">A risk-free supply chain model for packaging at factory direct pricing. Based in Nevada with teams across the United States, China, Vietnam, and throughout Asia.</p>
+        <p class="footer__tagline">Packaging That Protects, Performs, and Sells. Family-owned custom thermoformed food packaging since 1989, based in Sparks, Nevada.</p>
         <div class="footer__social">
           <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
           <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -165,22 +163,21 @@
         <div class="footer__col-title">Company</div>
         <div class="footer__col-links">
           <a href="about.html">About DCP</a>
-          <a href="logistics.html">Logistics</a>
+          <a href="products.html#industries">Industries</a>
           <a href="custom-packaging.html">Custom Packaging</a>
           <a href="sustainability.html">Sustainability</a>
-          <a href="blog.html">News</a>
+          <a href="blog.html">Resources</a>
           <a href="contact.html">Contact</a>
         </div>
       </div>
       <div>
-        <div class="footer__col-title">Products</div>
+        <div class="footer__col-title">Solutions</div>
         <div class="footer__col-links">
-          <a href="products.html#sushi">Sushi Containers</a>
-          <a href="products.html#herb">Herb Containers</a>
-          <a href="products.html#clamshells">Clamshells</a>
-          <a href="products.html#deli">Deli Tubs &amp; Lids</a>
-          <a href="products.html#bakery">Bakery Containers</a>
-          <a href="products.html#trays">Trays</a>
+          <a href="custom-packaging.html">Custom Thermoformed</a>
+          <a href="custom-packaging.html">Embossed Packaging</a>
+          <a href="products.html#clamshells">Clamshell Containers</a>
+          <a href="sustainability.html">Sustainable Packaging</a>
+          <a href="logistics.html">Inventory Programs</a>
         </div>
       </div>
       <div>
@@ -193,7 +190,7 @@
     </div>
     <div class="footer__bottom">
       <span>&copy; 2026 Discount Clear Pack. All rights reserved.</span>
-      <span>Sourcing · Logistics · Fulfillment</span>
+      <span>Packaging That Protects, Performs, and Sells.</span>
     </div>
   </div>
 </footer>

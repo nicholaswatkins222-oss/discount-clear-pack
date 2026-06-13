@@ -10,36 +10,24 @@
 </head>
 <body>
 
-<!-- Top Info Bar -->
-<div class="top-bar">
-  <div class="container">
-    <div class="top-bar__inner">
-      <div class="top-bar__item"><i class="fas fa-map-marker-alt"></i><span>519 Vista Blvd, Sparks NV 89434</span></div>
-      <div class="top-bar__item"><i class="fas fa-phone"></i><a href="tel:7757374090">(775) 737-4090</a></div>
-      <div class="top-bar__item"><i class="fas fa-envelope"></i><a href="mailto:info@discountclearpack.com">info@discountclearpack.com</a></div>
-    </div>
-  </div>
-</div>
-
-<!-- Navbar -->
-<nav class="navbar" role="navigation" aria-label="Main navigation">
+<!-- Navbar — dark navy, white logo, gold Request a Quote -->
+<nav class="navbar navbar--dark" role="navigation" aria-label="Main navigation">
   <div class="container">
     <div class="navbar__inner">
       <a href="index.html" class="navbar__logo" aria-label="Discount Clear Pack Home">
-        <img src="Logo/Screenshot 2026-04-01 170924.png" alt="Discount Clear Pack">
+        <img src="Logo/dcp-white.png" alt="Discount Clear Pack">
       </a>
       <div class="navbar__nav">
-        <a href="index.html">Home</a>
-        <a href="logistics.html">Logistics</a>
-        <a href="products.html">Products</a>
+        <a href="products.html">Solutions</a>
+        <a href="products.html#industries">Industries</a>
         <a href="custom-packaging.html">Custom Packaging</a>
         <a href="sustainability.html" class="active">Sustainability</a>
-        <a href="blog.html">News</a>
+        <a href="blog.html">Resources</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </div>
       <div class="navbar__actions">
-        <a href="tel:7757374090" class="navbar__phone"><i class="fas fa-phone"></i>(775) 737-4090</a>
+        <a href="contact.html" class="btn btn-gold btn-sm navbar__cta"><i class="fas fa-arrow-right"></i> Request a Quote</a>
       </div>
       <button class="navbar__hamburger" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -53,12 +41,11 @@
   <button class="mobile-menu__close" aria-label="Close menu"><i class="fas fa-times"></i></button>
   <div class="mobile-menu__inner">
     <nav>
-      <a href="index.html">Home</a>
-      <a href="logistics.html">Logistics</a>
-      <a href="products.html">Products</a>
+      <a href="products.html">Solutions</a>
+      <a href="products.html#industries">Industries</a>
       <a href="custom-packaging.html">Custom Packaging</a>
       <a href="sustainability.html">Sustainability</a>
-      <a href="blog.html">News</a>
+      <a href="blog.html">Resources</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
@@ -70,133 +57,128 @@
   </div>
 </div>
 
-<!-- Page Hero -->
-<section class="page-hero">
-  <div class="container">
+<!-- ════════════════════════════════════════
+     PAGE HERO — navy dark, full-bleed, image bleeds right
+════════════════════════════════════════ -->
+<section class="page-hero page-hero--dark" style="position:relative;overflow:hidden;padding:0;">
+  <div class="container" style="position:relative;z-index:2;padding-top:72px;padding-bottom:72px;">
     <div class="page-hero__inner">
       <div class="page-hero__breadcrumb">
         <a href="index.html">Home</a>
         <i class="fas fa-chevron-right"></i>
         <span>Sustainability</span>
       </div>
-      <span class="section-label">SUSTAINABILITY</span>
-      <h1 class="page-hero__title">Clear on our responsibility.</h1>
-      <p class="page-hero__subtitle">Clear packaging and environmental responsibility aren't opposites. Here's how DCP approaches sustainability — through recyclable materials, responsible sourcing, and food-safe standards.</p>
+      <h1 class="page-hero__title">Smarter Packaging for a Better Tomorrow</h1>
+      <p class="page-hero__subtitle">Sustainability is at the core of how we think, design, and deliver packaging solutions.</p>
     </div>
+  </div>
+  <div style="position:absolute;top:0;right:0;bottom:0;width:46vw;z-index:1;">
+    <div style="position:absolute;inset:0;z-index:2;background:linear-gradient(90deg,var(--ink) 0%,rgba(0,30,46,0) 26%);"></div>
+    <img src="images/warehouse-aisle.jpg" alt="Sustainability — DCP packaging warehouse" style="width:100%;height:100%;object-fit:cover;display:block;">
   </div>
 </section>
 
 <!-- ════════════════════════════════════════
-     CORE PILLARS
+     OUR SUSTAINABILITY COMMITMENT — centered icon row
 ════════════════════════════════════════ -->
 <section class="section">
   <div class="container">
-    <div class="section-header reveal">
-      <span class="section-label">OUR APPROACH</span>
-      <div class="section-divider"></div>
-      <h2 class="section-title">Three sustainability pillars.</h2>
+    <div class="section-header centered reveal" style="max-width:720px;margin-left:auto;margin-right:auto;">
+      <span class="section-label ink">Our Sustainability Commitment</span>
+      <div class="section-divider c"></div>
+      <h2 class="section-title">Smarter choices. Measurable impact.</h2>
+      <p class="section-subtitle" style="margin-left:auto;margin-right:auto;">We are committed to reducing environmental impact through responsible material choices, innovative design, and efficient manufacturing processes.</p>
     </div>
-    <div class="sustainability-grid reveal">
-      <div class="sustainability-item">
-        <i class="fas fa-recycle"></i>
-        <h4>Recyclable Materials</h4>
-        <p>The majority of our clear containers are made from RPET (recycled PET) — one of the most widely accepted recyclable plastics in the U.S. Containers can re-enter the materials stream after use, reducing pressure on virgin plastic.</p>
+    <div class="icon-row icon-row--5 reveal">
+      <div class="icon-feature">
+        <div class="icon-feature__icon"><i class="fas fa-recycle"></i></div>
+        <div class="icon-feature__title">Recyclable PET Solutions</div>
+        <p class="icon-feature__desc">Crystal-clear RPET containers that re-enter the materials stream after use, reducing virgin plastic demand.</p>
       </div>
-      <div class="sustainability-item">
-        <i class="fas fa-seedling"></i>
-        <h4>Food-Safe Standards</h4>
-        <p>Every product in our catalog meets FDA food-contact material standards. No compromise on food safety — ever. The same material transparency we offer in our containers, we apply to sourcing.</p>
+      <div class="icon-feature">
+        <div class="icon-feature__icon"><i class="fas fa-arrows-spin"></i></div>
+        <div class="icon-feature__title">Post-Consumer Recycled Content</div>
+        <p class="icon-feature__desc">Higher PCR blends available — match your sustainability claims with verified recycled content thresholds.</p>
       </div>
-      <div class="sustainability-item">
-        <i class="fas fa-leaf"></i>
-        <h4>Responsible Sourcing</h4>
-        <p>We work with factory partners who meet quality and compliance standards at the production level — not just at the label. Our sourcing process is intentional, not just transactional.</p>
+      <div class="icon-feature">
+        <div class="icon-feature__icon"><i class="fas fa-leaf"></i></div>
+        <div class="icon-feature__title">Material Reduction Opportunities</div>
+        <p class="icon-feature__desc">Right-sizing and lightweighting programs that cut material use without compromising product protection.</p>
+      </div>
+      <div class="icon-feature">
+        <div class="icon-feature__icon"><i class="fas fa-comments"></i></div>
+        <div class="icon-feature__title">Sustainable Packaging Consultation</div>
+        <p class="icon-feature__desc">We guide brands through material trade-offs, recyclability, and end-of-life options for every application.</p>
+      </div>
+      <div class="icon-feature">
+        <div class="icon-feature__icon"><i class="fas fa-industry"></i></div>
+        <div class="icon-feature__title">Responsible Manufacturing</div>
+        <p class="icon-feature__desc">Factory partners held to quality and compliance standards at the production level — not just at the label.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ════════════════════════════════════════
-     WHY RPET
+     MAKING A POSITIVE IMPACT — text + photo
 ════════════════════════════════════════ -->
 <section class="section bg-off-white">
   <div class="container">
-    <div class="grid-2-col">
+    <div class="grid-2-col" style="gap:60px;align-items:center;">
       <div class="reveal">
-        <span class="section-label">WHY RPET</span>
+        <span class="section-label ink">Making a Positive Impact</span>
         <div class="section-divider"></div>
-        <h2 style="margin-bottom:24px;">Clear, food-safe, recyclable.</h2>
-        <p style="color:var(--body-text);font-size:1.02rem;line-height:1.82;margin-bottom:20px;">RPET (recycled polyethylene terephthalate) is the workhorse of clear packaging — and one of the few plastics with established curbside recycling infrastructure across the United States.</p>
-        <p style="color:var(--body-text);font-size:1.02rem;line-height:1.82;margin-bottom:0;">The same crystal clarity that lets shoppers see your product is what allows RPET to be sorted, washed, and re-melted into new containers. It's a closed loop — when consumers do their part.</p>
+        <h2 class="section-title" style="margin-bottom:24px;">We partner with our customers to help achieve their sustainability goals while maintaining performance, quality, and food safety.</h2>
+        <p style="color:var(--body-text);font-size:1.02rem;line-height:1.82;margin-bottom:20px;">The majority of our clear containers are made from RPET (recycled polyethylene terephthalate) — one of the most widely accepted recyclable plastics in the U.S. The same crystal clarity that lets shoppers see your product is what allows RPET to be sorted, washed, and re-melted into new containers.</p>
+        <p style="color:var(--body-text);font-size:1.02rem;line-height:1.82;margin-bottom:20px;">Every product in our catalog meets FDA food-contact material standards. No compromise on food safety — ever. The same material transparency we offer in our containers, we apply to sourcing.</p>
+        <p style="color:var(--body-text);font-size:1.02rem;line-height:1.82;margin-bottom:0;">Ocean container freight is the most carbon-efficient mode for high-volume shipments. Our supply chain leans on it by default, and U.S. warehouses positioned for regional fulfillment reduce last-mile transit.</p>
       </div>
       <div class="reveal reveal-delay-1">
-        <img src="images/product-pallets.jpg" alt="Crystal-clear RPET clamshell containers — the clarity that lets shoppers see your product also makes RPET easy to recycle" class="photo photo--16x9" loading="lazy">
+        <img src="images/warehouse-aisle.jpg" alt="DCP warehouse — responsible operations and sustainable supply chain" class="photo photo--4x3" loading="lazy">
       </div>
     </div>
   </div>
 </section>
 
 <!-- ════════════════════════════════════════
-     ALTERNATIVE MATERIALS
+     BEYOND STANDARD RPET — 3 material cards
 ════════════════════════════════════════ -->
-<section class="section">
+<section class="categories-dark">
   <div class="container">
-    <div class="section-header reveal">
-      <span class="section-label">ALTERNATIVE MATERIALS</span>
-      <div class="section-divider"></div>
-      <h2 class="section-title">Beyond standard RPET.</h2>
-      <p class="section-subtitle">When your product or brand requires a different material, we source it. Our supply chain isn't locked to a single plastic.</p>
+    <div class="section-header centered" style="max-width:720px;margin-left:auto;margin-right:auto;margin-bottom:48px;">
+      <span class="section-label on-dark reveal">Beyond Standard RPET</span>
+      <div class="section-divider c reveal reveal-delay-1"></div>
+      <h2 class="section-title reveal reveal-delay-2" style="color:var(--paper);">When your product or brand requires a different material, we source it.</h2>
+      <p class="section-subtitle on-dark reveal reveal-delay-3" style="margin-left:auto;margin-right:auto;">Our supply chain isn't locked to a single plastic. Consumers, retailers, and brands are demanding more responsible packaging — DCP helps you meet that demand.</p>
     </div>
-    <div class="grid-3 reveal">
-      <div class="card">
-        <div class="card__icon"><i class="fas fa-droplet"></i></div>
-        <h3 class="card__title">PLA (Plant-Based)</h3>
-        <p class="card__desc">Polylactic acid — derived from corn or sugarcane. Compostable in industrial facilities. Best for brands marketing actively to sustainability-conscious shoppers.</p>
+    <div class="icon-row icon-row--3 icon-row--on-dark reveal" style="grid-template-columns:repeat(3,1fr);">
+      <div class="icon-feature">
+        <div class="icon-feature__icon"><i class="fas fa-seedling"></i></div>
+        <div class="icon-feature__title">PLA (Plant-Based)</div>
+        <p class="icon-feature__desc">Polylactic acid — derived from corn or sugarcane. Compostable in industrial facilities. Best for brands marketing to sustainability-conscious shoppers.</p>
       </div>
-      <div class="card">
-        <div class="card__icon"><i class="fas fa-flask"></i></div>
-        <h3 class="card__title">PP (Polypropylene)</h3>
-        <p class="card__desc">Higher heat tolerance than RPET. Used for hot-fill and microwave-safe applications. Widely accepted in #5 recycling streams.</p>
+      <div class="icon-feature">
+        <div class="icon-feature__icon"><i class="fas fa-flask"></i></div>
+        <div class="icon-feature__title">PP (Polypropylene)</div>
+        <p class="icon-feature__desc">Higher heat tolerance than RPET. Used for hot-fill and microwave-safe applications. Widely accepted in #5 recycling streams.</p>
       </div>
-      <div class="card">
-        <div class="card__icon"><i class="fas fa-arrows-rotate"></i></div>
-        <h3 class="card__title">100% Recycled Content</h3>
-        <p class="card__desc">Higher post-consumer recycled content blends available on request. Talk to us about your sustainability claims and the recycled content thresholds to match.</p>
+      <div class="icon-feature">
+        <div class="icon-feature__icon"><i class="fas fa-arrows-rotate"></i></div>
+        <div class="icon-feature__title">100% Recycled Content</div>
+        <p class="icon-feature__desc">Higher post-consumer recycled content blends available on request. Talk to us about your sustainability claims and the PCR thresholds to match.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ════════════════════════════════════════
-     OPERATIONAL SUSTAINABILITY
+     CTA SPLIT — navy band
 ════════════════════════════════════════ -->
-<section class="section bg-off-white">
+<section class="cta-split">
   <div class="container">
-    <div class="grid-2-col">
-      <div class="reveal reveal-delay-1">
-        <img src="images/warehouse-wide.jpg" alt="Discount Clear Pack warehouse — efficient, consolidated operations" class="photo photo--16x9" loading="lazy">
-      </div>
-      <div class="reveal">
-        <span class="section-label">OPERATIONAL</span>
-        <div class="section-divider"></div>
-        <h2 style="margin-bottom:24px;">Efficiency at every step.</h2>
-        <p style="color:var(--body-text);font-size:1.02rem;line-height:1.82;margin-bottom:20px;">Ocean container freight is the most carbon-efficient mode for high-volume shipments — significantly lower per-unit emissions than air freight. Our supply chain leans on it by default.</p>
-        <p style="color:var(--body-text);font-size:1.02rem;line-height:1.82;margin-bottom:0;">U.S. warehouses positioned for regional fulfillment reduce last-mile transit. Recurring orders are planned to minimize partial-load shipments. Efficiency isn't just commercial — it's environmental.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA Banner -->
-<section class="cta-banner">
-  <div class="container">
-    <div class="cta-banner__inner reveal">
-      <h2 class="cta-banner__title">Sourcing with intention.</h2>
-      <p class="cta-banner__subtitle">Talk to us about material options, recycled content, or sustainability claims for your brand.</p>
-      <div class="cta-banner__btns">
-        <a href="contact.html" class="btn btn-primary"><i class="fas fa-arrow-right"></i> Contact DCP</a>
-        <a href="custom-packaging.html" class="btn btn-ghost">Custom Materials</a>
-      </div>
+    <div class="cta-split__inner reveal">
+      <div class="cta-split__text">Let's build a more sustainable package.</div>
+      <a href="contact.html" class="btn btn-gold btn-lg"><i class="fas fa-arrow-right"></i> Request a Quote</a>
     </div>
   </div>
 </section>
@@ -207,7 +189,7 @@
     <div class="footer__grid">
       <div>
         <div class="footer__logo"><img src="Logo/dcp-white.png" alt="Discount Clear Pack"></div>
-        <p class="footer__tagline">A risk-free supply chain model for packaging at factory direct pricing. Based in Nevada with teams across the United States, China, Vietnam, and throughout Asia.</p>
+        <p class="footer__tagline">Packaging That Protects, Performs, and Sells. Family-owned custom thermoformed food packaging since 1989, based in Sparks, Nevada.</p>
         <div class="footer__social">
           <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
           <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -218,22 +200,21 @@
         <div class="footer__col-title">Company</div>
         <div class="footer__col-links">
           <a href="about.html">About DCP</a>
-          <a href="logistics.html">Logistics</a>
+          <a href="products.html#industries">Industries</a>
           <a href="custom-packaging.html">Custom Packaging</a>
           <a href="sustainability.html">Sustainability</a>
-          <a href="blog.html">News</a>
+          <a href="blog.html">Resources</a>
           <a href="contact.html">Contact</a>
         </div>
       </div>
       <div>
-        <div class="footer__col-title">Products</div>
+        <div class="footer__col-title">Solutions</div>
         <div class="footer__col-links">
-          <a href="products.html#sushi">Sushi Containers</a>
-          <a href="products.html#herb">Herb Containers</a>
-          <a href="products.html#clamshells">Clamshells</a>
-          <a href="products.html#deli">Deli Tubs &amp; Lids</a>
-          <a href="products.html#bakery">Bakery Containers</a>
-          <a href="products.html#trays">Trays</a>
+          <a href="custom-packaging.html">Custom Thermoformed</a>
+          <a href="custom-packaging.html">Embossed Packaging</a>
+          <a href="products.html#clamshells">Clamshell Containers</a>
+          <a href="sustainability.html">Sustainable Packaging</a>
+          <a href="logistics.html">Inventory Programs</a>
         </div>
       </div>
       <div>
@@ -246,7 +227,7 @@
     </div>
     <div class="footer__bottom">
       <span>&copy; 2026 Discount Clear Pack. All rights reserved.</span>
-      <span>Sourcing · Logistics · Fulfillment</span>
+      <span>Packaging That Protects, Performs, and Sells.</span>
     </div>
   </div>
 </footer>
