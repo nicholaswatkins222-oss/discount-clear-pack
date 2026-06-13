@@ -1541,6 +1541,21 @@ p  { line-height: 1.65; }
 /* Section label — ink variant (Kristie centers dark labels) */
 .section-label.ink { color: var(--ink); }
 
+/* Navy inner-page hero (Kristie template — all inner pages) */
+.page-hero--dark { background: var(--ink); border-bottom: none; }
+.page-hero--dark .page-hero__title { color: var(--paper); }
+.page-hero--dark .page-hero__subtitle { color: rgba(255,252,242,.80); }
+.page-hero--dark .page-hero__breadcrumb,
+.page-hero--dark .page-hero__breadcrumb a { color: rgba(255,255,255,.55); }
+.page-hero--dark .page-hero__breadcrumb a:hover { color: #C9A66B; }
+.page-hero--dark .page-hero__breadcrumb i { color: rgba(255,255,255,.40); }
+.page-hero--dark .section-label { color: #C9A66B; }
+.page-hero--dark .section-divider { background: #C9A66B; }
+/* Navy hero with image on the right (About / Bakery) */
+.page-hero--dark .page-hero__grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 48px; align-items: center; }
+.page-hero--dark .page-hero__grid .page-hero__inner { max-width: none; }
+@media (max-width: 860px) { .page-hero--dark .page-hero__grid { grid-template-columns: 1fr; gap: 28px; } }
+
 /* Case-study card with photo + read link */
 .case-card { padding: 0; overflow: hidden; }
 .case-card__img { aspect-ratio: 16 / 11; }
