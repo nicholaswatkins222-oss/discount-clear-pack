@@ -1477,6 +1477,82 @@ p  { line-height: 1.65; }
 }
 
 /* ============================================================
+   KRISTIE TEMPLATE — dark nav, gold CTAs, full-bleed hero,
+   centered gold icon rows. Scoped with modifiers so inner
+   pages stay intact until each is rebuilt to match.
+   ============================================================ */
+
+/* Dark navbar variant */
+.navbar.navbar--dark { background: var(--ink); border-bottom: 1px solid rgba(255,255,255,.08); }
+.navbar--dark .navbar__nav a { color: rgba(255,252,242,.82); }
+.navbar--dark .navbar__nav a:hover { color: #C9A66B; }
+.navbar--dark .navbar__nav a.active { color: #C9A66B; border-bottom-color: #C9A66B; }
+.navbar--dark .navbar__hamburger span { background: var(--paper); }
+
+/* Gold + light-outline buttons (gold = primary action) */
+.btn-gold { background: var(--bronze); color: var(--paper); }
+.btn-gold:hover { background: var(--bronze-dark); color: var(--paper); }
+.btn-outline-light { background: transparent; color: var(--paper); border: 1px solid rgba(255,255,255,.55); }
+.btn-outline-light:hover { background: rgba(255,255,255,.10); border-color: var(--paper); color: var(--paper); }
+.navbar__cta { margin-left: 4px; }
+
+/* Dark full-bleed hero — image bleeds off the right edge */
+.hero--dark { position: relative; background: var(--ink); border-bottom: none; padding: 0; overflow: hidden; }
+.hero--dark .hero__content { padding-top: 0; padding-bottom: 0; }
+.hero--dark .hero__inner { max-width: 560px; padding: 104px 0; position: relative; z-index: 2; }
+.hero--dark .hero__eyebrow { color: #C9A66B; }
+.hero--dark .hero__eyebrow::before { background: #C9A66B; }
+.hero--dark .hero__title { color: var(--paper); }
+.hero--dark .hero__title em { color: #C9A66B; }
+.hero--dark .hero__subtitle { color: rgba(255,252,242,.80); }
+.hero--dark .hero__media { position: absolute; top: 0; right: 0; bottom: 0; width: 46vw; z-index: 1; }
+.hero--dark .hero__media::before { content:''; position:absolute; inset:0; z-index:2; background: linear-gradient(90deg, var(--ink) 0%, rgba(0,30,46,0) 26%); }
+.hero--dark .hero__media-img { width: 100%; height: 100%; object-fit: cover; border: none; border-radius: 0; box-shadow: none; }
+
+@media (max-width: 900px) {
+  .hero--dark .hero__inner { padding: 52px 0 0; max-width: none; }
+  .hero--dark .hero__media { position: static; width: auto; height: 250px; margin: 32px -24px 0; }
+  .hero--dark .hero__media::before { display: none; }
+}
+
+/* Centered gold icon rows (Industries / Why DCP / Solutions / Sustainability) */
+.icon-row { display: grid; gap: 28px; }
+.icon-row--6 { grid-template-columns: repeat(6, 1fr); }
+.icon-row--5 { grid-template-columns: repeat(5, 1fr); }
+.icon-row--4 { grid-template-columns: repeat(4, 1fr); }
+.icon-feature { text-align: center; }
+.icon-feature__icon { font-size: 2.1rem; color: var(--bronze); margin-bottom: 16px; line-height: 1; }
+.icon-feature__num { font-family: var(--font-h); font-size: clamp(1.8rem, 3vw, 2.4rem); font-weight: 700; color: var(--ink); line-height: 1; margin: 6px 0; }
+.icon-feature__title { font-family: var(--font-h); font-size: .95rem; font-weight: 700; color: var(--ink); letter-spacing: -.01em; margin-bottom: 8px; line-height: 1.3; }
+.icon-feature__desc { font-size: .85rem; color: var(--muted); line-height: 1.55; }
+.icon-row--on-dark .icon-feature__icon { color: #C9A66B; }
+.icon-row--on-dark .icon-feature__title,
+.icon-row--on-dark .icon-feature__num { color: var(--paper); }
+.icon-row--on-dark .icon-feature__desc { color: rgba(255,255,255,.72); }
+
+@media (max-width: 768px) {
+  .icon-row--6, .icon-row--5 { grid-template-columns: repeat(3, 1fr); }
+  .icon-row--4 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .icon-row { grid-template-columns: repeat(2, 1fr) !important; gap: 22px; }
+}
+
+/* Section label — ink variant (Kristie centers dark labels) */
+.section-label.ink { color: var(--ink); }
+
+/* Case-study card with photo + read link */
+.case-card { padding: 0; overflow: hidden; }
+.case-card__img { aspect-ratio: 16 / 11; }
+.case-card__body { padding: 24px 24px 26px; }
+
+/* Split CTA band — heading left, gold button right */
+.cta-split { background: var(--ink); padding: 44px 0; }
+.cta-split__inner { display: flex; align-items: center; justify-content: space-between; gap: 28px; flex-wrap: wrap; }
+.cta-split__text { color: var(--paper); font-family: var(--font-h); font-size: clamp(1.3rem, 2.4vw, 1.7rem); font-weight: 700; letter-spacing: -.015em; line-height: 1.25; }
+@media (max-width: 600px) { .cta-split__inner { flex-direction: column; align-items: flex-start; } }
+
+/* ============================================================
    Responsive — Tablet (≤1024px)
    ============================================================ */
 @media (max-width: 1024px) {
